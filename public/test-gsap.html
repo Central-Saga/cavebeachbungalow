@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP Test</title>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- GSAP ScrollTo Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+    <!-- GSAP Utils -->
+    <script src="/build/assets/gsap-utils-DsW9C7jU.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        .test-section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .test-button {
+            background: #608BC1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .test-button:hover {
+            background: #4a6a99;
+        }
+        .test-element {
+            background: #e0e0e0;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 4px;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .animate-fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .animate-slide-left {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+        .animate-scale-in {
+            opacity: 0;
+            transform: scale(0);
+        }
+    </style>
+</head>
+<body>
+    <h1>GSAP Utilities Test</h1>
+
+    <div class="test-section">
+        <h2>GSAP Availability Check</h2>
+        <div id="gsap-status">Checking...</div>
+        <div id="gsap-version"></div>
+        <div id="gsap-utils-status"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Animation Tests</h2>
+        <button class="test-button" onclick="testFadeIn()">Test Fade In</button>
+        <button class="test-button" onclick="testSlideLeft()">Test Slide Left</button>
+        <button class="test-button" onclick="testScaleIn()">Test Scale In</button>
+        <button class="test-button" onclick="testStagger()">Test Stagger</button>
+        <button class="test-button" onclick="testTextReveal()">Test Text Reveal</button>
+
+        <div class="test-element" id="fade-test">Fade In Test Element</div>
+        <div class="test-element" id="slide-test">Slide Left Test Element</div>
+        <div class="test-element" id="scale-test">Scale In Test Element</div>
+
+        <div class="stagger-test">
+            <div class="test-element animate-fade-in">Stagger Element 1</div>
+            <div class="test-element animate-fade-in">Stagger Element 2</div>
+            <div class="test-element animate-fade-in">Stagger Element 3</div>
+        </div>
+
+        <h3 id="text-reveal-test">This text will be revealed character by character</h3>
+    </div>
+
+    <div class="test-section">
+        <h2>Console Logs</h2>
+        <div id="console-logs" style="background: #000; color: #0f0; padding: 10px; border-radius: 4px; font-family: monospace; max-height: 200px; overflow-y: auto;"></div>
+    </div>
+
+    <script>
+        // Override console.log to show in page
+        const originalLog = console.log;
+        const originalError = console.error;
+        const consoleDiv = document.getElementById('console-logs');
+
+        function addToConsole(message, type = 'log') {
+            const div = document.createElement('div');
+            div.style.color = type === 'error' ? '#ff6b6b' : '#0f0';
+            div.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            consoleDiv.appendChild(div);
+            consoleDiv.scrollTop = consoleDiv.scrollHeight;
+        }
+
+        console.log = function(...args) {
+            originalLog.apply(console, args);
+            addToConsole(args.join(' '));
+        };
+
+        console.error = function(...args) {
+            originalError.apply(console, args);
+            addToConsole(args.join(' '), 'error');
+        };
+
+        // Check GSAP availability
+        function checkGSAP() {
+            const gsapStatus = document.getElementById('gsap-status');
+            const gsapVersion = document.getElementById('gsap-version');
+            const gsapUtilsStatus = document.getElementById('gsap-utils-status');
+
+            if (window.gsap) {
+                gsapStatus.innerHTML = '✅ GSAP Loaded Successfully';
+                gsapStatus.style.color = 'green';
+                gsapVersion.innerHTML = `Version: ${gsap.version}`;
+            } else {
+                gsapStatus.innerHTML = '❌ GSAP Not Loaded';
+                gsapStatus.style.color = 'red';
+            }
+
+            if (window.gsapUtils) {
+                gsapUtilsStatus.innerHTML = '✅ GSAP Utils Available';
+                gsapUtilsStatus.style.color = 'green';
+            } else {
+                gsapUtilsStatus.innerHTML = '❌ GSAP Utils Not Available';
+                gsapUtilsStatus.style.color = 'red';
+            }
+        }
+
+        // Test functions
+        function testFadeIn() {
+            if (window.gsapUtils) {
+                const element = document.getElementById('fade-test');
+                window.gsapUtils.fadeIn(element, 0.5, 0);
+            } else {
+                console.error('GSAP Utils not available');
+            }
+        }
+
+        function testSlideLeft() {
+            if (window.gsapUtils) {
+                const element = document.getElementById('slide-test');
+                window.gsapUtils.slideInLeft(element, 0.6, 0);
+            } else {
+                console.error('GSAP Utils not available');
+            }
+        }
+
+        function testScaleIn() {
+            if (window.gsapUtils) {
+                const element = document.getElementById('scale-test');
+                window.gsapUtils.scaleIn(element, 0.5, 0);
+            } else {
+                console.error('GSAP Utils not available');
+            }
+        }
+
+        function testStagger() {
+            if (window.gsapUtils) {
+                const elements = document.querySelectorAll('.stagger-test .animate-fade-in');
+                window.gsapUtils.staggerAnimation(elements, 'fadeIn', 0.2);
+            } else {
+                console.error('GSAP Utils not available');
+            }
+        }
+
+        function testTextReveal() {
+            if (window.gsapUtils) {
+                const element = document.getElementById('text-reveal-test');
+                window.gsapUtils.textReveal(element, 1, 0);
+            } else {
+                console.error('GSAP Utils not available');
+            }
+        }
+
+        // Wait for everything to load
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, checking GSAP...');
+
+            // Check immediately
+            checkGSAP();
+
+            // Check again after a delay to ensure GSAP Utils are loaded
+            setTimeout(() => {
+                console.log('Delayed check for GSAP Utils...');
+                checkGSAP();
+
+                if (window.gsapUtils) {
+                    console.log('GSAP Utils loaded successfully');
+                } else {
+                    console.error('GSAP Utils still not available');
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
