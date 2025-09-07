@@ -13,29 +13,17 @@ class TipeKamarFactory extends Factory
     public function definition(): array
     {
         $tipeNames = [
-            'Studio',
-            'Deluxe',
-            'Suite',
-            'Premium',
-            'Executive',
-            'Family',
-            'Business',
-            'Luxury',
-            'Standard',
-            'Superior'
+            'Standard Twin 2 Twin Beds',
+            'Deluxe Garden View',
+            'Deluxe 1 Twin Bed Garden View',
+            'Deluxe Ocean View'
         ];
 
         $descriptions = [
-            'Kamar nyaman dengan fasilitas lengkap untuk kenyamanan maksimal',
-            'Unit premium dengan desain modern dan fasilitas terbaik',
-            'Kamar mewah dengan ruang yang luas dan pelayanan eksklusif',
-            'Hunian berkualitas tinggi dengan standar internasional',
-            'Unit executive yang cocok untuk pebisnis dan profesional',
-            'Kamar keluarga yang nyaman dengan ruang yang lega',
-            'Unit bisnis dengan fasilitas kerja yang lengkap',
-            'Kamar mewah dengan sentuhan elegan dan mewah',
-            'Kamar standar dengan kualitas terjamin dan harga terjangkau',
-            'Unit superior dengan kualitas di atas standar'
+            'Kamar nyaman dengan dua tempat tidur twin, ideal untuk teman atau keluarga yang menginap bersama.',
+            'Kamar deluxe dengan pemandangan taman yang asri.',
+            'Kamar deluxe dengan satu tempat tidur twin dan pemandangan taman.',
+            'Kamar deluxe premium dengan pemandangan laut yang memukau.'
         ];
 
         return [

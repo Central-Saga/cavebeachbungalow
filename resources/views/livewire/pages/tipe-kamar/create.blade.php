@@ -157,8 +157,7 @@ $clearAllPhotos = function() {
                                             Tambah Tipe Kamar Baru
                                         </h1>
                                         <p class="mt-2 text-sm text-gray-600 dark:text-gray-300 font-medium">
-                                            Buat tipe kamar baru untuk sistem Pondok Putri
-                                        </p>
+                                            Buat tipe kamar baru Cave Beach Bungalow
                                     </div>
                                 </div>
                             </div>

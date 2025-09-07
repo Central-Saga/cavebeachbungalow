@@ -15,10 +15,9 @@
         <a href="{{ auth()->user()->hasRole('customer') ? route('landing.home') : route('admin.dashboard') }}"
             class="flex justify-center items-center py-6 mb-2" wire:navigate>
             <div class="flex flex-col items-center text-center">
-                <span class="text-sm text-gray-500 dark:text-gray-400 font-medium leading-tight mb-1">Hotel</span>
+                <span class="text-sm text-gray-500 dark:text-gray-400 font-medium leading-tight mb-1">Villa</span>
                 <span
-                    class="text-xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent leading-tight">Pondok
-                    Putri</span>
+                    class="text-xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent leading-tight">Cave Beach Bungalow</span>
             </div>
         </a>
 
@@ -195,10 +194,9 @@
 
         <div class="flex items-center">
             <div class="flex flex-col items-center text-center">
-                <span class="text-xs text-gray-500 dark:text-gray-400 font-medium leading-tight mb-0.5">Hotel</span>
+                <span class="text-xs text-gray-500 dark:text-gray-400 font-medium leading-tight mb-0.5">VIlla</span>
                 <span
-                    class="text-sm font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent leading-tight">Pondok
-                    Putri</span>
+                    class="text-sm font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent leading-tight">Cave Beach Bungalow</span>
             </div>
         </div>
 
@@ -267,7 +265,7 @@
     <script src="{{ asset('js/theme-enforcer.js') }}"></script>
 
     <style>
-        /* Custom styles for sidebar to match Pondok Putri Hotel aesthetic */
+        /* Custom styles for sidebar to match Cave Beach Bungalow */
         .flux-sidebar {
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;

@@ -241,7 +241,7 @@ $save = function() {
                                             Tambah Reservasi Baru
                                         </h1>
                                         <p class="mt-2 text-sm text-gray-600 dark:text-gray-300 font-medium">
-                                            Buat reservasi baru untuk sistem Pondok Putri
+                                            Buat reservasi baru Cave Beach Bungalow
                                         </p>
                                     </div>
                                 </div>

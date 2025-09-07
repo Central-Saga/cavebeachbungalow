@@ -21,6 +21,7 @@ Volt::route('landingkamar/detail/{id}', 'pages.landingpage.kamar.detail')->name(
 // Landing page routes
 Volt::route('landingpage/home', 'pages.landingpage.home.index')->name('landingpage.home');
 Volt::route('landingpage/aboutme', 'pages.landingpage.aboutme.index')->name('landingpage.aboutme');
+Volt::route('landingpage/gallery', 'pages.landingpage.gallery.index')->name('landingpage.gallery');
 Volt::route('landingpage/kamar', 'pages.landingpage.kamar.index')->name('landingpage.kamar');
 Volt::route('landingpage/kamar/detail/{id}', 'pages.landingpage.kamar.detail')->name('landingpage.kamar.detail');
 Volt::route('landingpage/tipe-kamar', 'pages.landingpage.tipe-kamar.index')->name('landingpage.tipe-kamar');

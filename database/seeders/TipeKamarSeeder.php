@@ -12,29 +12,24 @@ class TipeKamarSeeder extends Seeder
     {
         $tipeKamars = [
             [
-                'nama_tipe' => 'Studio',
-                'kode_tipe' => 'STD',
-                'deskripsi' => 'Kamar studio yang nyaman dan efisien, cocok untuk solo traveler atau pasangan muda. Dilengkapi dengan fasilitas lengkap untuk kenyamanan maksimal.',
+                'nama_tipe' => 'Standard Twin 2 Twin Beds',
+                'kode_tipe' => 'STW',
+                'deskripsi' => 'Kamar nyaman dengan dua tempat tidur twin, ideal untuk teman atau keluarga yang menginap bersama. Dilengkapi dengan fasilitas lengkap untuk kenyamanan maksimal.',
             ],
             [
-                'nama_tipe' => 'Deluxe',
-                'kode_tipe' => 'DLX',
-                'deskripsi' => 'Kamar deluxe dengan ruang yang lebih luas dan fasilitas premium. Desain modern dengan sentuhan elegan untuk pengalaman tinggal yang memuaskan.',
+                'nama_tipe' => 'Deluxe Garden View',
+                'kode_tipe' => 'DGV',
+                'deskripsi' => 'Kamar deluxe dengan pemandangan taman yang asri. Nikmati suasana tenang dan menyegarkan dengan akses ke pemandangan taman resort.',
             ],
             [
-                'nama_tipe' => 'Suite',
-                'kode_tipe' => 'SUT',
-                'deskripsi' => 'Kamar suite mewah dengan ruang yang sangat luas dan fasilitas lengkap. Cocok untuk keluarga atau tamu VIP yang menginginkan kenyamanan maksimal.',
+                'nama_tipe' => 'Deluxe 1 Twin Bed Garden View',
+                'kode_tipe' => 'DTG',
+                'deskripsi' => 'Kamar deluxe dengan satu tempat tidur twin dan pemandangan taman. Cocok untuk solo traveler yang menginginkan kenyamanan dengan view taman yang menenangkan.',
             ],
             [
-                'nama_tipe' => 'Premium',
-                'kode_tipe' => 'PRM',
-                'deskripsi' => 'Unit premium dengan standar kualitas tinggi dan fasilitas terbaik. Desain kontemporer dengan sentuhan mewah untuk pengalaman tinggal eksklusif.',
-            ],
-            [
-                'nama_tipe' => 'Executive',
-                'kode_tipe' => 'EXC',
-                'deskripsi' => 'Kamar executive yang dirancang khusus untuk pebisnis dan profesional. Dilengkapi dengan ruang kerja dan fasilitas bisnis yang lengkap.',
+                'nama_tipe' => 'Deluxe Ocean View',
+                'kode_tipe' => 'DOV',
+                'deskripsi' => 'Kamar deluxe premium dengan pemandangan laut yang memukau. Nikmati panorama laut yang indah langsung dari kamar Anda.',
             ],
         ];
 

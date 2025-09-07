@@ -6,14 +6,14 @@
             <!-- Logo -->
             <div class="flex-shrink-0">
                 <a href="#" class="flex items-center space-x-2 group">
-                    <div
-                        class="w-8 h-8 bg-[#608BC1] rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-[#4a6a99] group-hover:rotate-3">
-                        <i
-                            class="fas fa-mountain text-white text-sm transition-all duration-300 group-hover:scale-110"></i>
+                    <div class="w-10 h-10 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
+                    <img src="{{ asset('img/logo_cavebeach.PNG') }}" 
+                        alt="Cave Beach Bungalow Logo" 
+                        class="w-full h-full object-contain">
                     </div>
                     <span
-                        class="text-lg font-bold text-[#133E87] transition-all duration-300 group-hover:text-[#608BC1] group-hover:scale-105 whitespace-nowrap">Pondok
-                        Putri</span>
+                        class="text-lg font-bold text-[#133E87] transition-all duration-300 group-hover:text-[#608BC1] group-hover:scale-105 whitespace-nowrap"> Cave Beach Bungalow
+                    </span>
                 </a>
             </div>
 
@@ -22,8 +22,12 @@
                 <div class="flex items-center justify-center space-x-8">
                     <a href="{{ route('landingpage.home') }}"
                         class="text-[#133E87] hover:text-[#608BC1] px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-110 hover:bg-[#608BC1]/10 whitespace-nowrap">Beranda</a>
+                    <a href="{{ route('landingpage.gallery') }}"
+                        class="text-[#133E87] hover:text-[#608BC1] px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-110 hover:bg-[#608BC1]/10 whitespace-nowrap">Gallery</a>
+                    <a href="{{ route('landingpage.tipe-kamar') }}"
+                        class="text-[#133E87] hover:text-[#608BC1] px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-110 hover:bg-[#608BC1]/10 whitespace-nowrap">Villas</a>
                     <a href="{{ route('landingpage.aboutme') }}"
-                        class="text-[#133E87] hover:text-[#608BC1] px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-110 hover:bg-[#608BC1]/10 whitespace-nowrap">Tentang</a>
+                        class="text-[#133E87] hover:text-[#608BC1] px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-110 hover:bg-[#608BC1]/10 whitespace-nowrap">About Us</a>
                     <a href="{{ route('landingpage.contact') }}"
                         class="text-[#133E87] hover:text-[#608BC1] px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-110 hover:bg-[#608BC1]/10 whitespace-nowrap">Contact
                         Us</a>
@@ -56,10 +60,6 @@
                             <a href="{{ route('landingpage.home') }}"
                                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#608BC1]/10 hover:text-[#133E87] transition-colors duration-200">
                                 <i class="fas fa-home mr-2"></i>Beranda
-                            </a>
-                            <a href="{{ route('landingpage.tipe-kamar') }}"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#608BC1]/10 hover:text-[#133E87] transition-colors duration-200">
-                                <i class="fas fa-bed mr-2"></i>Tipe Kamar
                             </a>
                             @if(auth()->user()->pelanggan)
                             <a href="{{ route('landingpage.reservasi-saya') }}"
@@ -107,6 +107,10 @@
                 class="mx-4 px-4 pt-3 pb-4 space-y-2 bg-white/95 backdrop-blur-md rounded-2xl shadow-lg border border-gray-100">
                 <a href="{{ route('landingpage.home') }}"
                     class="text-[#133E87] hover:text-[#608BC1] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Beranda</a>
+                <a href="{{ route('landingpage.gallery') }}"
+                    class="text-[#133E87] hover:text-[#608BC1] px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-110 hover:bg-[#608BC1]/10 whitespace-nowrap">Gallery</a>
+                <a href="{{ route('landingpage.tipe-kamar') }}"
+                    class="text-[#133E87] hover:text-[#608BC1] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Villas</a>
                 <a href="{{ route('landingpage.aboutme') }}"
                     class="text-[#133E87] hover:text-[#608BC1] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Tentang</a>
                 <a href="{{ route('landingpage.contact') }}"
@@ -127,10 +131,7 @@
                         <i class="fas fa-tachometer-alt mr-2"></i>Dashboard Admin
                     </a>
                     @endif
-                    <a href="{{ route('landingpage.tipe-kamar') }}"
-                        class="text-[#133E87] hover:text-[#608BC1] block px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200 text-center">
-                        <i class="fas fa-bed mr-2"></i>Tipe Kamar
-                    </a>
+
                     @if(auth()->user()->pelanggan)
                     <a href="{{ route('landingpage.reservasi-saya') }}"
                         class="text-[#133E87] hover:text-[#608BC1] block px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200 text-center">
@@ -181,7 +182,7 @@
             return;
         }
 
-        // Close mobile menu when clicking on navigation links
+        // Close mobile menu when clicking on links
         const navLinks = document.querySelectorAll('nav a');
         navLinks.forEach(link => {
             link.addEventListener('click', function() {

@@ -104,26 +104,23 @@ mount(function () {
           class="inline-flex items-center gap-2 rounded-full bg-white/20 backdrop-blur-sm px-4 py-2 text-sm font-medium border border-white/30"
           data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
           <i class="fas fa-building text-blue-300"></i>
-          Pondok Putri Apartment
+          Cave Beach Bungalow
         </span>
 
         <!-- Headings -->
         <div class="mt-8">
           <h1 id="hero-title-1"
             class="hero-head text-[clamp(2rem,6vw,4.5rem)] md:text-6xl lg:text-7xl font-black leading-tight text-white [text-shadow:0_2px_4px_rgba(0,0,0,.5)] opacity-0">
-            Hunian Modern
+            Cave Beach Bungalow Nusa Penida
           </h1>
           <h2 id="hero-title-2"
-            class="hero-head text-[clamp(2rem,6vw,4.5rem)] md:text-6xl lg:text-7xl font-black leading-tight text-white mt-2 [text-shadow:0_2px_4px_rgba(0,0,0,.5)] opacity-0">
-            Nyaman &amp; Strategis
-          </h2>
+           </h2>
         </div>
 
         <!-- Description (copy baru) -->
         <p class="mt-6 md:mt-8 text-lg md:text-xl lg:text-2xl text-white/95 leading-relaxed max-w-2xl"
           data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-          Lokasi strategis dekat pusat bisnis, kampus, dan rumah sakit. Pilihan kamar dengan sewa
-          fleksibel harian/mingguan/bulanan, keamanan 24/7, dan Wi-Fi cepat.
+          Villa nyaman dengan panorama pantai, hanya 14 menit dari pelabuhan boat. Dilengkapi kolam renang pribadi, Wi-Fi stabil, serta sistem keamanan terjaga. Lokasi strategis dekat destinasi wisata populer, ideal untuk liburan tenang maupun perjalanan singkat.
         </p>
 
         <!-- CTA -->

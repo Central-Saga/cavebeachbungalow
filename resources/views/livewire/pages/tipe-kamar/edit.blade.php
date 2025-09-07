@@ -206,7 +206,7 @@ $deleteExistingPhoto = function($photoId) {
                                             Edit Tipe Kamar
                                         </h1>
                                         <p class="mt-2 text-sm text-gray-600 dark:text-gray-300 font-medium">
-                                            Edit tipe kamar "{{ $nama_tipe }}" untuk sistem Pondok Putri
+                                            Edit tipe kamar "{{ $nama_tipe }}" Cave Beach Bungalow
                                         </p>
                                     </div>
                                 </div>

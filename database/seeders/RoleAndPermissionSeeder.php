@@ -42,7 +42,7 @@ class RoleAndPermissionSeeder extends Seeder
             Permission::firstOrCreate(['name' => $permission]);
         }
 
-        // Create roles and assign permissions
+        // Create role for Admin with all permissions
         $admin = Role::firstOrCreate(['name' => 'Admin']);
         $admin->syncPermissions([
             'mengelola user',
@@ -58,23 +58,7 @@ class RoleAndPermissionSeeder extends Seeder
             'mencetak laporan',
         ]);
 
-        // Create role for Owner (same permissions as Admin)
-        $owner = Role::firstOrCreate(['name' => 'Owner']);
-        $owner->syncPermissions([
-            'mengelola user',
-            'mengelola role',
-            'mengelola pelanggan',
-            'mengelola kamar',
-            'mengelola reservasi',
-            'mengelola pembayaran',
-            'mengelola tipe dan fasilitas kamar',
-            'mengelola ketersediaan kamar',
-            'mengelola galeri kamar',
-            'mengelola harga sewa',
-            'mencetak laporan',
-        ]);
-
-        // Create role for Pengunjung
+        // Create role for Pengunjung with limited permissions
         $pengunjung = Role::firstOrCreate(['name' => 'Pengunjung']);
         $pengunjung->syncPermissions([
             'melihat tipe dan fasilitas kamar',

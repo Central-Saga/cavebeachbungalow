@@ -52,7 +52,7 @@ mount(function () {
                 {{ __('Selamat Datang') }}, {{ auth()->user()->name }}! 👋
             </h1>
             <p class="text-lg text-gray-600 dark:text-gray-400">
-                {{ __('Kelola hotel Anda dengan mudah dari dashboard ini') }}
+                {{ __('Kelola semuanya Disini') }}
             </p>
         </div>
 

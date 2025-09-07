@@ -21,11 +21,6 @@ class UserSeeder extends Seeder
             'name' => 'Admin',
         ]);
 
-        User::factory()->owner()->create([
-            'email' => 'owner@example.com',
-            'name' => 'Owner',
-        ]);
-
         User::factory()->pengunjung()->create([
             'email' => 'pengunjung@example.com',
             'name' => 'Pengunjung',

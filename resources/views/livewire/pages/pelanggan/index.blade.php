@@ -224,7 +224,7 @@ with(function () {
                                             class="text-2xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 dark:from-white dark:via-blue-200 dark:to-purple-200 bg-clip-text text-transparent">
                                             Kelola Pelanggan</h1>
                                         <p class="mt-2 text-sm text-gray-600 dark:text-gray-300 font-medium">Manajemen
-                                            data pelanggan untuk sistem Pondok Putri</p>
+                                            data pelanggan Cave Beach Bungalow </p>
                                     </div>
                                 </div>
                             </div>

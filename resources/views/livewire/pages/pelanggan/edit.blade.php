@@ -110,7 +110,7 @@ with(function () {
                                             Edit Pelanggan
                                         </h1>
                                         <p class="mt-2 text-sm text-gray-600 dark:text-gray-300 font-medium">
-                                            Edit data pelanggan untuk sistem Pondok Putri
+                                            Edit data pelanggan Cave Beach Bungalow
                                         </p>
                                     </div>
                                 </div>
