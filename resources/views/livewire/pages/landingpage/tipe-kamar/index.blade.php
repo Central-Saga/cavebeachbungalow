@@ -64,7 +64,7 @@ mount(function() {
     <!-- ===== HERO SECTION ===== -->
     <section
         class="relative min-h-[calc(100svh-var(--nav-h))] md:min-h-[calc(100dvh-var(--nav-h))] pt-[calc(var(--nav-h)+2rem)] overflow-hidden bg-cover bg-center bg-no-repeat"
-        style="background-image: url('{{ asset('img/asset/5.jpg') }}');">
+        style="background-image: url('{{ asset('img/villa.png') }}');">
         <!-- Background overlay untuk readability -->
         <div class="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-900/60 to-slate-900/40"></div>
         <!-- Subtle pattern overlay -->
@@ -74,23 +74,15 @@ mount(function() {
 
         <div class="relative z-10 container mx-auto px-4 pb-16 md:pb-24">
             <div class="max-w-4xl text-center mx-auto">
-                <!-- Badge -->
-                <span
-                    class="inline-flex items-center gap-2 rounded-full bg-white/20 backdrop-blur-sm px-4 py-2 text-sm font-medium border border-white/30 mb-6"
-                    data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
-                    <i class="fas fa-building text-blue-300"></i>
-                    Tipe Kamar
-                </span>
-
                 <!-- Headings -->
                 <h1 class="text-[clamp(2rem,6vw,4.5rem)] md:text-6xl lg:text-7xl font-black leading-tight text-white mb-6"
                     data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    Pilihan Unit
+                    Tipe Kamar
                 </h1>
 
                 <p class="text-lg md:text-xl lg:text-2xl text-white/90 leading-relaxed max-w-2xl mx-auto"
                     data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                    Berbagai tipe unit dengan desain modern dan fasilitas lengkap untuk kenyamanan maksimal.
+                    Berbagai tipe kamar dengan fasilitas lengkap untuk kenyamanan Anda
                 </p>
 
                 <!-- Debug Info -->
@@ -154,14 +146,6 @@ mount(function() {
                         <!-- Overlay gradient -->
                         <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
 
-                        <!-- Badge kode tipe -->
-                        <div class="absolute top-3 right-3">
-                            <span
-                                class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-[#133E87] text-white shadow">
-                                {{ $tipe->kode_tipe }}
-                            </span>
-                        </div>
-
                         <!-- Status tersedia -->
                         <div
                             class="absolute bottom-3 left-3 text-white text-sm rounded-full bg-black/40 backdrop-blur px-3 py-1">
@@ -206,7 +190,7 @@ mount(function() {
                             <a href="{{ route('landingpage.tipe-kamar.detail', $tipe->id) }}"
                                 class="inline-flex items-center gap-2 rounded-xl bg-[#133E87] hover:bg-[#0f326e] px-4 py-2 text-white transition-all duration-300 transform hover:scale-105">
                                 <i class="fas fa-info-circle text-sm"></i>
-                                Detail Lengkap
+                                Details Kamar
                             </a>
                         </div>
                     </div>
@@ -228,15 +212,15 @@ mount(function() {
     <!-- ===== CTA SECTION ===== -->
     <section class="bg-slate-50 py-16">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Tertarik dengan Unit Kami?</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Tertarik dengan Kami?</h2>
             <p class="text-slate-600 max-w-2xl mx-auto mb-8">
-                Jangan ragu untuk menghubungi kami atau melakukan booking langsung untuk unit yang Anda inginkan.
+                Booking mudah dan cepat. Hubungi kami sekarang untuk pertanyaan lebih lanjut.
             </p>
             <div class="flex flex-wrap items-center justify-center gap-4">
-                <a href="https://wa.me/6281234567890"
+                <a href="https://wa.me/6281339163939"
                     class="inline-flex items-center gap-2 rounded-xl bg-green-600 hover:bg-green-700 px-6 py-3 text-white font-medium transition-all duration-300 transform hover:scale-105">
                     <i class="fab fa-whatsapp"></i>
-                    WhatsApp
+                    Hubungi Kami
                 </a>
             </div>
         </div>

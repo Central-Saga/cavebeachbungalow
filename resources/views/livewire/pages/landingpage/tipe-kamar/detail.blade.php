@@ -63,14 +63,6 @@ mount(function($id) {
                     </a>
                 </nav>
 
-                <!-- Badge -->
-                <span
-                    class="inline-flex items-center gap-2 rounded-full bg-white/20 backdrop-blur-sm px-4 py-2 text-sm font-medium border border-white/30 mb-6"
-                    data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
-                    <i class="fas fa-building text-blue-300"></i>
-                    {{ $tipeKamar->kode_tipe }}
-                </span>
-
                 <!-- Headings -->
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-slate-900 mb-6"
                     data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
@@ -152,7 +144,7 @@ mount(function($id) {
                             $availableRooms = \App\Models\Kamar::where('tipe_kamar_id', $tipeKamar->id)->get();
                             @endphp
 
-                            @if($availableRooms && count($availableRooms) > 0)
+                                                        @if($availableRooms && count($availableRooms) > 0)
                             @foreach($availableRooms as $kamar)
                             <div
                                 class="bg-slate-50 rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300">
@@ -164,23 +156,47 @@ mount(function($id) {
                                         <div>
                                             <h4 class="font-semibold text-slate-900 text-lg">{{ $kamar->nomor_kamar }}
                                             </h4>
-                                            <p class="text-slate-600">Lantai {{ $kamar->lantai ?? '1' }}</p>
-                                            <p class="text-sm text-slate-500">{{ $kamar->kode_tipe ??
-                                                $tipeKamar->kode_tipe }}</p>
+                                            @php
+                                                // Check room availability status
+                                                $isAvailable = true; // You can implement your availability logic here
+                                                $statusText = $isAvailable ? 'Tersedia' : 'Tidak Tersedia';
+                                                $statusClass = $isAvailable ? 'text-green-600' : 'text-red-600';
+                                            @endphp
+                                            <p class="{{ $statusClass }}">{{ $statusText }}</p>
                                         </div>
                                     </div>
                                     <div class="text-right">
-                                        <div class="flex items-center gap-2 mb-2">
-                                            <span
-                                                class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
-                                                <i class="fas fa-check-circle mr-1"></i>Tersedia
-                                            </span>
+                                        @php
+                                            // Get room price - prioritize harian first, then other types
+                                            $hargaKamar = $kamar->hargas()->where('tipe_paket', 'harian')->first() 
+                                                        ?? $kamar->hargas()->first();
+                                        @endphp
+                                        @if($hargaKamar)
+                                        <div class="mb-2">
+                                            <div class="text-xl font-bold text-[#133E87]">
+                                                Rp {{ number_format($hargaKamar->harga, 0, ',', '.') }}
+                                            </div>
+                                            <p class="text-sm text-slate-600">per {{ $hargaKamar->tipe_paket === 'harian' ? 'hari' : ($hargaKamar->tipe_paket === 'mingguan' ? 'minggu' : 'bulan') }}</p>
                                         </div>
+                                        @else
+                                        <div class="mb-2">
+                                            <div class="text-lg font-medium text-slate-500">
+                                                Harga belum diset
+                                            </div>
+                                        </div>
+                                        @endif
+                                        @if($isAvailable)
                                         <a href="{{ route('landingpage.reservasi') }}?kamar={{ $kamar->id }}"
-                                            class="inline-flex items-center gap-2 rounded-lg bg-[#133E87] hover:bg-[#0f326e] px-4 py-2 text-white text-sm transition-all duration-300 transform hover:scale-105">
+                                            class="inline-flex items-center gap-2 rounded-lg bg-[#133E87] hover:bg-[#0f326e] px-4 py-2 text-white text-sm font-medium transition-all duration-300 transform hover:scale-105">
                                             <i class="fas fa-calendar-check"></i>
                                             Booking
                                         </a>
+                                        @else
+                                        <span class="inline-flex items-center gap-2 rounded-lg bg-slate-400 px-4 py-2 text-white text-sm font-medium cursor-not-allowed">
+                                            <i class="fas fa-lock"></i>
+                                            Tidak Tersedia
+                                        </span>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -193,7 +209,15 @@ mount(function($id) {
                                     <i class="fas fa-home text-blue-600 text-2xl"></i>
                                 </div>
                                 <h4 class="font-semibold text-slate-900 text-lg mb-2">Unit Tersedia</h4>
-                                <p class="text-slate-600 mb-4">Tipe kamar ini tersedia untuk booking</p>
+                                <p class="text-slate-600 mb-2">Tipe kamar ini tersedia untuk booking</p>
+                                @if($hargaKamar)
+                                <div class="mb-4">
+                                    <div class="text-2xl font-bold text-[#133E87]">
+                                        Rp {{ number_format($hargaKamar->harga, 0, ',', '.') }}
+                                    </div>
+                                    <p class="text-sm text-slate-600">per {{ $hargaKamar->tipe_paket === 'harian' ? 'hari' : ($hargaKamar->tipe_paket === 'mingguan' ? 'minggu' : 'bulan') }}</p>
+                                </div>
+                                @endif
                                 <a href="{{ route('landingpage.reservasi') }}?tipe={{ $tipeKamar->id }}"
                                     class="inline-flex items-center gap-2 rounded-lg bg-[#133E87] hover:bg-[#0f326e] px-6 py-3 text-white font-medium transition-all duration-300 transform hover:scale-105">
                                     <i class="fas fa-calendar-check"></i>
@@ -246,11 +270,11 @@ mount(function($id) {
                     <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200" data-aos="fade-left"
                         data-aos-duration="800" data-aos-delay="200">
                         <h3 class="text-xl font-bold text-slate-900 mb-4">Butuh Bantuan?</h3>
-                        <p class="text-slate-600 mb-4">Tim kami siap membantu Anda memilih unit yang tepat.</p>
-                        <a href="https://wa.me/6281234567890?text=Saya tertarik dengan {{ $tipeKamar->nama_tipe }}"
+                        <p class="text-slate-600 mb-4">Tim kami siap kapanpun anda membutuhkan kami</p>
+                        <a href="https://wa.me/6281339163939?text=Halo%20Cave%20Beach%20Bungalow%2C%20saya%20mau%20bertanya%20tentang%20{{ urlencode($tipeKamar->nama_tipe) }}" 
                             class="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-green-600 hover:bg-green-700 px-6 py-3 text-white font-medium transition-all duration-300">
                             <i class="fab fa-whatsapp"></i>
-                            Chat WhatsApp
+                            WhatsApp
                         </a>
                     </div>
                 </div>

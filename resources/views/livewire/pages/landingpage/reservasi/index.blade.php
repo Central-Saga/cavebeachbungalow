@@ -303,7 +303,7 @@ $save = function() {
                         <span class="text-slate-400">|</span>
                         <a href="{{ route('landingpage.reservasi-saya') }}"
                             class="hover:text-[#133E87] transition-colors">
-                            <i class="fas fa-calendar-check mr-2"></i>Reservasi Saya
+                            Reservasi Saya
                         </a>
                         @endif
                     </nav>
@@ -321,7 +321,6 @@ $save = function() {
                     <div class="mt-6">
                         <a href="{{ route('landingpage.reservasi-saya') }}"
                             class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm hover:bg-white text-[#133E87] px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:shadow-lg">
-                            <i class="fas fa-calendar-check"></i>
                             Lihat Reservasi Saya
                         </a>
                     </div>
@@ -423,11 +422,6 @@ $save = function() {
                                                         <i class="fas fa-sync-alt"></i>
                                                     </button>
                                                 </div>
-                                                <p class="mt-2 text-xs text-slate-500">
-                                                    Kode reservasi di-generate otomatis dengan format RSV + YYYY + MM +
-                                                    4
-                                                    digit nomor urut
-                                                </p>
                                                 @error('kode_reservasi') <span class="text-red-500 text-sm">{{ $message
                                                     }}</span> @enderror
                                             </div>
@@ -440,9 +434,6 @@ $save = function() {
                                                     <i class="fas fa-clock mr-2"></i>
                                                     Pending (Default)
                                                 </div>
-                                                <p class="mt-2 text-xs text-slate-500">
-                                                    Status reservasi akan otomatis diset sebagai "Pending"
-                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -471,8 +462,6 @@ $save = function() {
                                                             <p class="text-slate-600">{{
                                                                 $selectedKamar->tipeKamar->nama_tipe ?? 'Tipe Kamar' }}
                                                             </p>
-                                                            <p class="text-sm text-slate-500">Lantai {{
-                                                                $selectedKamar->lantai ?? '1' }}</p>
                                                         </div>
                                                     </div>
                                                     <div class="text-right">
@@ -511,8 +500,6 @@ $save = function() {
                                                                     <p class="text-slate-600">{{
                                                                         $kamar->tipeKamar->nama_tipe ?? 'Tipe Kamar' }}
                                                                     </p>
-                                                                    <p class="text-sm text-slate-500">Lantai {{
-                                                                        $kamar->lantai ?? '1' }}</p>
                                                                 </div>
                                                             </div>
                                                             <div class="text-right">

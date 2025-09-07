@@ -5,6 +5,7 @@ use App\Models\Pelanggan;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Validation\Rules;
 use Livewire\Attributes\Layout;
 use Livewire\Volt\Component;
@@ -58,9 +59,15 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
         event(new Registered($user));
 
+        // Log the user in immediately
         Auth::login($user);
-
-        $this->redirectIntended(route('redirect.role', absolute: false), navigate: true);
+        
+        // Regenerate the session to ensure security
+        Session::regenerate();
+        
+        // Use native redirect to ensure the navigation state is properly updated
+        // The navigate:false parameter ensures a full page load which refreshes all components
+        $this->redirectIntended(route('redirect.role', absolute: false), navigate: false);
     }
 }; ?>
 
@@ -74,30 +81,30 @@ new #[Layout('components.layouts.auth')] class extends Component {
     <!-- Session Status -->
     <x-auth-session-status class="text-center" :status="session('status')" />
 
-    <form wire:submit="register" class="flex flex-col gap-6">
+    <form wire:submit.prevent="register" class="flex flex-col gap-6">
         <div class="space-y-4">
             <!-- Name -->
-            <flux:input wire:model="name" :label="__('Name')" type="text" required autofocus autocomplete="name"
+            <flux:input wire:model.live="name" :label="__('Name')" type="text" required autofocus autocomplete="name"
                 :placeholder="__('Full name')" />
 
             <!-- Email Address -->
-            <flux:input wire:model="email" :label="__('Email address')" type="email" required autocomplete="email"
+            <flux:input wire:model.live="email" :label="__('Email address')" type="email" required autocomplete="email"
                 placeholder="email@example.com" />
 
             <!-- Password -->
-            <flux:input wire:model="password" :label="__('Password')" type="password" required
+            <flux:input wire:model.live="password" :label="__('Password')" type="password" required
                 autocomplete="new-password" :placeholder="__('Password')" viewable />
 
             <!-- Confirm Password -->
-            <flux:input wire:model="password_confirmation" :label="__('Confirm password')" type="password" required
+            <flux:input wire:model.live="password_confirmation" :label="__('Confirm password')" type="password" required
                 autocomplete="new-password" :placeholder="__('Confirm password')" viewable />
 
             <!-- Phone Number -->
-            <flux:input wire:model="telepon" :label="__('Phone Number')" type="tel" required autocomplete="tel"
+            <flux:input wire:model.live="telepon" :label="__('Phone Number')" type="tel" required autocomplete="tel"
                 :placeholder="__('08123456789')" />
 
             <!-- Address -->
-            <flux:input wire:model="alamat" :label="__('Address')" type="text" required
+            <flux:input wire:model.live="alamat" :label="__('Address')" type="text" required
                 autocomplete="street-address" :placeholder="__('Jl. Contoh No. 123')" />
 
             <!-- Gender -->
@@ -107,14 +114,14 @@ new #[Layout('components.layouts.auth')] class extends Component {
                 </label>
                 <div class="flex gap-4">
                     <label class="flex items-center cursor-pointer group">
-                        <input type="radio" wire:model="jenis_kelamin" value="L"
+                        <input type="radio" wire:model.live="jenis_kelamin" value="L"
                             class="mr-3 w-4 h-4 text-[#133E87] bg-gray-100 border-gray-300 focus:ring-[#133E87] focus:ring-2">
                         <span
                             class="text-sm text-zinc-700 dark:text-zinc-300 group-hover:text-[#133E87] transition-colors duration-200">{{
                             __('Male') }}</span>
                     </label>
                     <label class="flex items-center cursor-pointer group">
-                        <input type="radio" wire:model="jenis_kelamin" value="P"
+                        <input type="radio" wire:model.live="jenis_kelamin" value="P"
                             class="mr-3 w-4 h-4 text-[#133E87] bg-gray-100 border-gray-300 focus:ring-[#133E87] focus:ring-2">
                         <span
                             class="text-sm text-zinc-700 dark:text-zinc-300 group-hover:text-[#133E87] transition-colors duration-200">{{

@@ -22,12 +22,12 @@
                 <div class="flex items-center justify-center space-x-8">
                     <a href="{{ route('landingpage.home') }}"
                         class="text-[#133E87] hover:text-[#608BC1] px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-110 hover:bg-[#608BC1]/10 whitespace-nowrap">Beranda</a>
+                    <a href="{{ route('landingpage.aboutme') }}"
+                        class="text-[#133E87] hover:text-[#608BC1] px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-110 hover:bg-[#608BC1]/10 whitespace-nowrap">About Us</a>
                     <a href="{{ route('landingpage.gallery') }}"
                         class="text-[#133E87] hover:text-[#608BC1] px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-110 hover:bg-[#608BC1]/10 whitespace-nowrap">Gallery</a>
                     <a href="{{ route('landingpage.tipe-kamar') }}"
                         class="text-[#133E87] hover:text-[#608BC1] px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-110 hover:bg-[#608BC1]/10 whitespace-nowrap">Villas</a>
-                    <a href="{{ route('landingpage.aboutme') }}"
-                        class="text-[#133E87] hover:text-[#608BC1] px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-110 hover:bg-[#608BC1]/10 whitespace-nowrap">About Us</a>
                     <a href="{{ route('landingpage.contact') }}"
                         class="text-[#133E87] hover:text-[#608BC1] px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-110 hover:bg-[#608BC1]/10 whitespace-nowrap">Contact
                         Us</a>
@@ -107,12 +107,12 @@
                 class="mx-4 px-4 pt-3 pb-4 space-y-2 bg-white/95 backdrop-blur-md rounded-2xl shadow-lg border border-gray-100">
                 <a href="{{ route('landingpage.home') }}"
                     class="text-[#133E87] hover:text-[#608BC1] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Beranda</a>
+                <a href="{{ route('landingpage.aboutme') }}"
+                    class="text-[#133E87] hover:text-[#608BC1] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">About Us</a>
                 <a href="{{ route('landingpage.gallery') }}"
                     class="text-[#133E87] hover:text-[#608BC1] px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-110 hover:bg-[#608BC1]/10 whitespace-nowrap">Gallery</a>
                 <a href="{{ route('landingpage.tipe-kamar') }}"
                     class="text-[#133E87] hover:text-[#608BC1] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Villas</a>
-                <a href="{{ route('landingpage.aboutme') }}"
-                    class="text-[#133E87] hover:text-[#608BC1] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Tentang</a>
                 <a href="{{ route('landingpage.contact') }}"
                     class="text-[#133E87] hover:text-[#608BC1] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Contact
                     Us</a>

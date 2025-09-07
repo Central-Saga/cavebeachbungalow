@@ -4,7 +4,7 @@ use function Livewire\Volt\{ layout, title, state, mount };
 use App\Models\TipeKamar;
 
 layout('components.layouts.landing');
-title('Pondok Putri Apartment');
+title('Cave Beach Bungalow');
 
 state([
     'tipeKamars' => []
@@ -86,31 +86,23 @@ mount(function () {
 
   <!-- ===== HERO ===== -->
   <section id="hero"
-    class="relative min-h-[calc(100svh-var(--nav-h))] md:min-h-[calc(100dvh-var(--nav-h))] pt-[calc(var(--nav-h)+2rem)] overflow-hidden">
+    class="relative min-h-[calc(100svh-var(--nav-h))] md:min-h-[calc(100dvh-var(--nav-h))] pt-[calc(var(--nav-h)+4rem)] pb-16 md:pb-24 overflow-hidden">
 
     <!-- BG Cover Image (LCP) -->
-    <img src="{{ asset('img/cover.png') }}" alt="Pondok Putri Apartment" fetchpriority="high"
+    <img src="{{ asset('img/image2.png') }}" alt="Cave Beach Bungalow" fetchpriority="high"
       class="absolute inset-0 w-full h-full object-cover object-center">
 
     <!-- Overlay gelap -->
     <div class="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-900/50 to-slate-900/30"></div>
 
     <!-- Content -->
-    <div class="relative z-10 container mx-auto px-4 pb-16 md:pb-24">
-      <div class="max-w-4xl text-white">
-
-        <!-- Badge -->
-        <span
-          class="inline-flex items-center gap-2 rounded-full bg-white/20 backdrop-blur-sm px-4 py-2 text-sm font-medium border border-white/30"
-          data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
-          <i class="fas fa-building text-blue-300"></i>
-          Cave Beach Bungalow
-        </span>
+    <div class="relative z-10 container mx-auto px-6 md:px-8 flex items-center justify-start h-full">
+      <div class="max-w-4xl text-white py-12 md:py-20 lg:py-32">
 
         <!-- Headings -->
-        <div class="mt-8">
+        <div class="mb-8 md:mb-10">
           <h1 id="hero-title-1"
-            class="hero-head text-[clamp(2rem,6vw,4.5rem)] md:text-6xl lg:text-7xl font-black leading-tight text-white [text-shadow:0_2px_4px_rgba(0,0,0,.5)] opacity-0">
+            class="hero-head text-[clamp(2.5rem,6vw,5rem)] md:text-6xl lg:text-7xl font-black leading-tight text-white [text-shadow:0_2px_4px_rgba(0,0,0,.5)] opacity-0">
             Cave Beach Bungalow Nusa Penida
           </h1>
           <h2 id="hero-title-2"
@@ -118,31 +110,31 @@ mount(function () {
         </div>
 
         <!-- Description (copy baru) -->
-        <p class="mt-6 md:mt-8 text-lg md:text-xl lg:text-2xl text-white/95 leading-relaxed max-w-2xl"
+        <p class="mb-10 md:mb-12 text-lg md:text-xl lg:text-2xl text-white/95 leading-relaxed max-w-2xl"
           data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
           Villa nyaman dengan panorama pantai, hanya 14 menit dari pelabuhan boat. Dilengkapi kolam renang pribadi, Wi-Fi stabil, serta sistem keamanan terjaga. Lokasi strategis dekat destinasi wisata populer, ideal untuk liburan tenang maupun perjalanan singkat.
         </p>
 
         <!-- CTA -->
-        <div class="mt-10 md:mt-12 flex flex-col sm:flex-row items-stretch sm:items-center gap-4" data-aos="fade-up"
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-6" data-aos="fade-up"
           data-aos-duration="800" data-aos-delay="500">
           <a href="{{ route('landingpage.tipe-kamar') }}"
-            class="inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-[#133E87] to-[#1e5bb8] hover:from-[#0f326e] hover:to-[#133E87] px-8 py-4 text-white font-semibold text-lg shadow-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-[0_20px_40px_rgba(19,62,135,0.3)] focus:outline-none focus:ring-4 focus:ring-blue-300/50"
-            aria-label="Lihat tipe kamar yang tersedia di Pondok Putri">
+            class="inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-[#133E87] to-[#1e5bb8] hover:from-[#0f326e] hover:to-[#133E87] px-8 py-5 text-white font-semibold text-lg shadow-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-[0_20px_40px_rgba(19,62,135,0.3)] focus:outline-none focus:ring-4 focus:ring-blue-300/50"
+            aria-label="Lihat tipe kamar yang tersedia di Cave Beach Bungalow">
             <i class="fas fa-calendar-check text-xl"></i>
             <span>Booking Sekarang</span>
           </a>
           <a href="#booking"
-            class="inline-flex items-center justify-center gap-3 rounded-2xl bg-white/20 hover:bg-white/30 backdrop-blur-sm px-8 py-4 text-white font-semibold text-lg border border-white/30 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_20px_40px_rgba(255,255,255,0.1)] focus:outline-none focus:ring-4 focus:ring-white/40"
-            aria-label="Jadwalkan tur apartemen Pondok Putri">
-            <i class="fas fa-calendar-check text-xl"></i>
-            <span>Jadwalkan Tur</span>
+            class="inline-flex items-center justify-center gap-3 rounded-2xl bg-white/20 hover:bg-white/30 backdrop-blur-sm px-8 py-5 text-white font-semibold text-lg border border-white/30 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_20px_40px_rgba(255,255,255,0.1)] focus:outline-none focus:ring-4 focus:ring-white/40"
+            aria-label="Contact Cave Beach Bungalow">
+            <i class="fas fa-phone-alt text-xl"></i>
+            <span>Hubungi Kami</span>
           </a>
         </div>
 
         <!-- Reservasi Saya Link (untuk user yang sudah login) -->
         @if(auth()->check() && auth()->user()->pelanggan)
-        <div class="mt-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+        <div class="mt-8" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
           <a href="{{ route('landingpage.reservasi-saya') }}"
             class="inline-flex items-center gap-2 text-white/90 hover:text-white transition-colors duration-300 hover:scale-105">
             <i class="fas fa-calendar-check text-lg"></i>
@@ -153,8 +145,8 @@ mount(function () {
         @endif
 
         <!-- Microcopy kecil -->
-        <div class="reveal mt-3 text-sm text-white/80">
-          Tanpa DP &nbsp;•&nbsp; Bisa survei offline &nbsp;•&nbsp; Promo early-bird terbatas
+        <div class="reveal mt-6 text-sm text-white/80">
+          Affordable &nbsp;•&nbsp; Beach ambience &nbsp;•&nbsp; Rasakan Villa dengan Pantai Privat
         </div>
 
         <!-- Feature chips -->
@@ -187,10 +179,9 @@ mount(function () {
   <section id="about" class="scroll-mt-[var(--nav-h)] bg-white">
     <div class="container mx-auto px-4 py-16 grid lg:grid-cols-2 gap-10 items-center">
       <div class="order-2 lg:order-1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Tentang <span class="text-[#133E87]">Pondok
-            Putri</span></h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Tentang <span class="text-[#133E87]">Cave Beach Bungalow</span></h2>
         <p class="mt-4 text-slate-600 leading-relaxed">
-          Pondok Putri adalah hunian modern yang nyaman dan strategis, dirancang khusus untuk memberikan
+          Cave Beach Bungalow adalah hunian modern yang nyaman dan strategis, dirancang khusus untuk memberikan
           pengalaman tinggal terbaik. Dengan lokasi yang dekat pusat bisnis, kampus, dan rumah sakit, kami
           menawarkan kenyamanan maksimal dengan harga terjangkau.
         </p>
@@ -213,18 +204,18 @@ mount(function () {
           <div class="rounded-2xl bg-slate-50 p-4 border border-slate-100" data-aos="zoom-in" data-aos-duration="800"
             data-aos-delay="700">
             <div class="text-sm text-slate-500">Akses</div>
-            <div class="font-semibold">Dekat pusat kota</div>
+            <div class="font-semibold">14 Menit dari Pelabuhan</div>
           </div>
         </div>
       </div>
       <div class="order-1 lg:order-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
         <div class="relative">
-          <img src="{{ asset('img/about.png') }}" alt="Pondok Putri Exterior"
+          <img src="{{ asset('img/cover2.png') }}" alt="Cave Beach Bungalow Side"
             class="w-full rounded-3xl shadow-lg object-cover h-[420px]">
           <div class="absolute -bottom-8 -left-6 bg-white rounded-2xl p-4 shadow-lg border border-slate-100"
             data-aos="zoom-in" data-aos-duration="800" data-aos-delay="800">
             <div class="text-center">
-              <div class="text-2xl font-bold text-[#133E87]">4.8</div>
+              <div class="text-2xl font-bold text-[#133E87]">4.5</div>
               <div class="text-sm text-slate-600">Rating</div>
               <div class="flex text-yellow-400 text-sm mt-1">
                 <i class="fas fa-star"></i>
@@ -247,7 +238,7 @@ mount(function () {
         <h2 class="text-3xl md:text-4xl font-bold text-slate-900" data-aos="fade-up" data-aos-duration="800">
           Fasilitas</h2>
         <p class="mt-3 text-slate-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-duration="800"
-          data-aos-delay="200">Fungsi lengkap untuk hidup praktis.</p>
+          data-aos-delay="200">Fungsi Unggulan Cave Beach Bungalow.</p>
       </div>
       <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- Keamanan 24/7 -->
@@ -280,16 +271,6 @@ mount(function () {
           <p class="mt-1 text-slate-600 text-sm">Area parkir luas dan terang</p>
         </div>
 
-        <!-- Coffee Corner -->
-        <div
-          class="facility-card rounded-2xl bg-white p-6 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
-          <div class="facility-icon mb-4">
-            <img src="{{ asset('img/gif/coffee-cup.gif') }}" alt="Coffee Corner" class="w-12 h-12 object-contain">
-          </div>
-          <h3 class="font-semibold text-slate-900">Coffee Corner</h3>
-          <p class="mt-1 text-slate-600 text-sm">Di lobby & lounge untuk relaksasi</p>
-        </div>
-
         <!-- Laundry -->
         <div
           class="facility-card rounded-2xl bg-white p-6 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
@@ -299,36 +280,6 @@ mount(function () {
           <h3 class="font-semibold text-slate-900">Laundry</h3>
           <p class="mt-1 text-slate-600 text-sm">Self service & managed services</p>
         </div>
-
-        <!-- Ruang Komunal -->
-        <div
-          class="facility-card rounded-2xl bg-white p-6 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
-          <div class="facility-icon mb-4">
-            <img src="{{ asset('img/gif/living-room.gif') }}" alt="Ruang Komunal" class="w-12 h-12 object-contain">
-          </div>
-          <h3 class="font-semibold text-slate-900">Ruang Komunal</h3>
-          <p class="mt-1 text-slate-600 text-sm">Area kerja & bersantai yang nyaman</p>
-        </div>
-
-        <!-- Lobby Modern -->
-        <div
-          class="facility-card rounded-2xl bg-white p-6 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
-          <div class="facility-icon mb-4">
-            <img src="{{ asset('img/gif/front-desk.gif') }}" alt="Lobby Modern" class="w-12 h-12 object-contain">
-          </div>
-          <h3 class="font-semibold text-slate-900">Lobby Modern</h3>
-          <p class="mt-1 text-slate-600 text-sm">Desain kontemporer & welcoming</p>
-        </div>
-
-        <!-- Akses Mudah -->
-        <div
-          class="facility-card rounded-2xl bg-white p-6 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
-          <div class="facility-icon mb-4">
-            <img src="{{ asset('img/gif/room-key.gif') }}" alt="Akses Mudah" class="w-12 h-12 object-contain">
-          </div>
-          <h3 class="font-semibold text-slate-900">Akses Mudah</h3>
-          <p class="mt-1 text-slate-600 text-sm">Dekat pusat kota & transportasi</p>
-        </div>
       </div>
     </div>
   </section>
@@ -337,9 +288,8 @@ mount(function () {
   <section id="rooms" class="scroll-mt-[var(--nav-h)] bg-white">
     <div class="container mx-auto px-4 py-16">
       <div class="text-center">
-        <h2 class="reveal text-3xl md:text-4xl font-bold text-slate-900">Pilihan Unit</h2>
-        <p class="reveal mt-3 text-slate-600 max-w-2xl mx-auto">Berbagai tipe unit dengan desain modern dan
-          fasilitas lengkap untuk kenyamanan maksimal.</p>
+        <h2 class="reveal text-3xl md:text-4xl font-bold text-slate-900">Tipe Kamar</h2>
+        <p class="reveal mt-3 text-slate-600 max-w-2xl mx-auto">Berbagai tipe kamar dengan ambience yang memikat.</p>
       </div>
       <div class="mt-10 grid md:grid-cols-3 gap-6">
         @forelse($tipeKamars as $tipe)
@@ -438,23 +388,23 @@ mount(function () {
   <section id="testimoni" class="scroll-mt-[var(--nav-h)] bg-slate-50">
     <div class="container mx-auto px-4 py-16">
       <div class="text-center">
-        <h2 class="reveal text-3xl md:text-4xl font-bold text-slate-900">Apa Kata Penghuni</h2>
-        <p class="reveal mt-3 text-slate-600 max-w-2xl mx-auto">Cerita singkat dari mereka yang sudah tinggal.
+        <h2 class="reveal text-3xl md:text-4xl font-bold text-slate-900">Apa Kata Mereka?</h2>
+        <p class="reveal mt-3 text-slate-600 max-w-2xl mx-auto">Pengalaman menginap di Cave Beach Bungalow dari berbagai orang.
         </p>
       </div>
 
       @php
       $testi = [
-      ['name'=>'Hana – Freelancer','text'=>'Lobby nyaman untuk kerja, Wi-Fi stabil.'],
-      ['name'=>'Rama – Keluarga kecil','text'=>'Unit 2BR lega & bersih, anak betah.'],
-      ['name'=>'Sinta – Karyawan','text'=>'Akses mudah, dekat transport & kuliner.'],
-      ['name'=>'Bima – Mahasiswa','text'=>'Dekat kampus, hemat waktu & biaya.'],
-      ['name'=>'Laras – Desainer','text'=>'Interior modern, banyak spot foto kece.'],
-      ['name'=>'Adi – Remote worker','text'=>'Koneksi internet cepat, meeting lancar.'],
-      ['name'=>'Maya – Nakes','text'=>'Dekat rumah sakit, shift malam aman.'],
-      ['name'=>'Tito – Pengusaha','text'=>'Parkir luas, staff sigap membantu.'],
-      ['name'=>'Nia – Content creator','text'=>'Pencahayaan bagus, shooting jadi gampang.'],
-      ['name'=>'Rere – Pasutri muda','text'=>'Lingkungan tenang, tidur nyenyak tiap malam.'],
+      ['name'=>'Restu','text'=>'Lobby nyaman untuk kerja, Wi-Fi stabil.'],
+      ['name'=>'Iben','text'=>'Unit 2BR lega & bersih, anak betah.'],
+      ['name'=>'Rani','text'=>'Akses mudah, dekat transport & kuliner.'],
+      ['name'=>'Rini','text'=>'Dekat kampus, hemat waktu & biaya.'],
+      ['name'=>'Arap','text'=>'Interior modern, banyak spot foto kece.'],
+      ['name'=>'Dwiki','text'=>'Koneksi internet cepat, meeting lancar.'],
+      ['name'=>'Varina','text'=>'Dekat rumah sakit, shift malam aman.'],
+      ['name'=>'Dede','text'=>'Parkir luas, staff sigap membantu.'],
+      ['name'=>'Tu Agus','text'=>'Pencahayaan bagus, shooting jadi gampang.'],
+      ['name'=>'Kelek','text'=>'Lingkungan tenang, tidur nyenyak tiap malam.'],
       ];
       @endphp
 
@@ -509,24 +459,21 @@ mount(function () {
 
   <!-- ===== BOOKING / CTA ===== -->
   <section id="booking" class="scroll-mt-[var(--nav-h)] relative bg-slate-900">
-    <div
-      class="absolute inset-0 opacity-[0.06] bg-[url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1200&auto=format&fit=crop')] bg-cover">
-    </div>
     <div class="container relative z-10 mx-auto px-4 py-16 text-white">
       <div class="text-center max-w-3xl mx-auto">
-        <h2 class="reveal text-3xl md:text-4xl font-bold">Tertarik Tinggal di Sini?</h2>
-        <p class="reveal mt-3 text-white/80">Jadwalkan tur atau hubungi kami untuk info ketersediaan & promosi.
+        <h2 class="reveal text-3xl md:text-4xl font-bold">Tertarik dengan kami?</h2>
+        <p class="reveal mt-3 text-white/80">Mari booking sekarang untuk mendapatkan villa yang strategis dengan pantai privat di depannya
         </p>
         <div class="reveal mt-8 flex flex-wrap items-center justify-center gap-3">
           <a href="{{ route('landingpage.tipe-kamar') }}"
             class="inline-flex items-center gap-2 rounded-xl bg-amber-400 hover:bg-amber-500 text-slate-900 px-6 py-3 font-medium transition">
             Lihat Tipe Kamar
           </a>
-          <a href="https://wa.me/6281234567890"
+          <a href="https://wa.me/6281339163939"
             class="inline-flex items-center gap-2 rounded-xl bg-white/10 hover:bg-white/20 px-6 py-3 text-white backdrop-blur transition">
             WhatsApp
           </a>
-          <p class="basis-full text-sm text-white/60">Telepon: +62 812-3456-7890</p>
+          <p class="basis-full text-sm text-white/60">Telepon: +62 813-3916-3939</p>
         </div>
       </div>
     </div>

@@ -4,13 +4,10 @@
             <!-- Company Info -->
             <div class="col-span-1 md:col-span-2">
                 <div class="flex items-center space-x-2 mb-4">
-                    <div class="w-10 h-10 bg-[#608BC1] rounded-lg flex items-center justify-center">
-                        <i class="fas fa-mountain text-white text-xl"></i>
-                    </div>
-                    <span class="text-xl font-bold">Pondok Putri</span>
+                    <span class="text-xl font-bold">Cave Beach Bungalow</span>
                 </div>
                 <p class="text-gray-600 mb-4 max-w-md">
-                    Pondok Putri adalah hunian modern yang nyaman dan strategis, dirancang khusus untuk memberikan
+                    Cave Beach Bungalow adalah hunian modern yang nyaman dan strategis, dirancang khusus untuk memberikan
                     pengalaman tinggal terbaik. Dengan lokasi yang dekat pusat bisnis, kampus, dan rumah sakit, kami
                     menawarkan kenyamanan maksimal dengan harga terjangkau.
                 </p>
@@ -28,7 +25,7 @@
                     <li><a href="#fasilitas"
                             class="text-gray-600 hover:text-[#608BC1] transition-colors duration-200">Fasilitas</a></li>
                     <li><a href="#booking"
-                            class="text-gray-600 hover:text-[#608BC1] transition-colors duration-200">Booking</a></li>
+                            class="text-gray-600 hover:text-[#608BC1] transition-colors duration-200">Villas</a></li>
                 </ul>
             </div>
 
@@ -38,12 +35,11 @@
                 <ul class="space-y-2">
                     <li class="flex items-start space-x-2">
                         <i class="fas fa-map-marker-alt text-[#608BC1] mt-1"></i>
-                        <span class="text-gray-600 text-sm">Jl. Beji Ayu IV No.3, Seminyak, Kec. Kuta, Kabupaten Badung,
-                            Bali 80361</span>
+                        <span class="text-gray-600 text-sm">Pura Giri Putri, Jl. Suana Karang Sari, Suana, Kec. Nusa Penida, Kabupaten Klungkung, Bali 80771</span>
                     </li>
                     <li class="flex items-center space-x-2">
                         <i class="fas fa-phone text-[#608BC1]"></i>
-                        <span class="text-gray-600">0812-3719-8114</span>
+                        <span class="text-gray-600">0813-3916-3939</span>
                     </li>
                 </ul>
             </div>
@@ -51,7 +47,7 @@
 
         <!-- Bottom Bar -->
         <div class="border-t border-gray-300 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p class="text-gray-600 text-sm">&copy; 2025 Pondok Putri. All rights reserved.</p>
+            <p class="text-gray-600 text-sm">&copy; 2025 Cave Beach Bungalow. All rights reserved.</p>
             <div class="flex space-x-6 mt-4 md:mt-0">
                 <a href="#" class="text-gray-600 hover:text-[#608BC1] text-sm transition-colors duration-200">Kebijakan
                     Privasi</a>

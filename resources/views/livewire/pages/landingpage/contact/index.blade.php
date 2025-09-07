@@ -3,7 +3,7 @@
 use function Livewire\Volt\{ layout, title, state, mount };
 
 layout('components.layouts.landing');
-title('Contact Us - Pondok Putri Apartment');
+title('Contact Us - Cave Beach Bungalow');
 
 ?>
 
@@ -11,7 +11,7 @@ title('Contact Us - Pondok Putri Apartment');
     <!-- ===== HERO ===== -->
     <section id="hero" class="relative min-h-[calc(100svh-84px)] pt-32 overflow-hidden">
         <!-- BG Cover Image -->
-        <img src="{{ asset('img/cover.png') }}" alt="Pondok Putri Apartment" fetchpriority="high"
+        <img src="{{ asset('img/image2.png') }}" alt="Pondok Putri Apartment" fetchpriority="high"
             class="absolute inset-0 w-full h-full object-cover object-center">
 
         <!-- Overlay gelap -->
@@ -20,13 +20,6 @@ title('Contact Us - Pondok Putri Apartment');
         <!-- Content -->
         <div class="relative z-10 container mx-auto px-4 pb-16 md:pb-24">
             <div class="max-w-4xl text-white">
-                <!-- Badge -->
-                <span
-                    class="inline-flex items-center gap-2 rounded-full bg-white/20 backdrop-blur-sm px-4 py-2 text-sm font-medium border border-white/30"
-                    data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
-                    <i class="fas fa-phone text-blue-300"></i>
-                    Hubungi Kami
-                </span>
 
                 <!-- Headings -->
                 <div class="mt-8">
@@ -36,31 +29,24 @@ title('Contact Us - Pondok Putri Apartment');
                     </h1>
                     <h2
                         class="hero-head text-[clamp(2rem,6vw,4.5rem)] md:text-6xl lg:text-7xl font-black leading-tight text-white mt-2 [text-shadow:0_2px_4px_rgba(0,0,0,.5)] opacity-0">
-                        Siap Melayani Anda
+                        Kami Siap Membantu
                     </h2>
                 </div>
 
                 <!-- Description -->
                 <p class="mt-6 md:mt-8 text-lg md:text-xl lg:text-2xl text-white/95 leading-relaxed max-w-2xl"
                     data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                    Ada pertanyaan atau ingin melakukan reservasi? Jangan ragu untuk menghubungi tim kami yang siap
-                    membantu Anda.
+                    Jangan ragu untuk menghubungi kami. Tim kami siap membantu Anda dengan segala pertanyaan atau kebutuhan yang Anda miliki.
                 </p>
 
                 <!-- CTA -->
                 <div class="mt-10 md:mt-12 flex flex-col sm:flex-row items-stretch sm:items-center gap-4"
                     data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
-                    <a href="https://wa.me/6281234567890"
+                    <a href="https://wa.me/6281339163939"
                         class="inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 px-8 py-4 text-white font-semibold text-lg shadow-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-[0_20px_40px_rgba(34,197,94,0.3)] focus:outline-none focus:ring-4 focus:ring-green-300/50"
                         aria-label="Hubungi kami via WhatsApp">
                         <i class="fab fa-whatsapp text-xl"></i>
                         <span>WhatsApp</span>
-                    </a>
-                    <a href="tel:+6281234567890"
-                        class="inline-flex items-center justify-center gap-3 rounded-2xl bg-white/20 hover:bg-white/30 backdrop-blur-sm px-8 py-4 text-white font-semibold text-lg border border-white/30 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_20px_40px_rgba(255,255,255,0.1)] focus:outline-none focus:ring-4 focus:ring-white/40"
-                        aria-label="Telepon langsung ke kami">
-                        <i class="fas fa-phone text-xl"></i>
-                        <span>Telepon</span>
                     </a>
                 </div>
 
@@ -98,7 +84,7 @@ title('Contact Us - Pondok Putri Apartment');
                 </h2>
                 <p class="mt-3 text-slate-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-duration="800"
                     data-aos-delay="200">
-                    Berbagai cara untuk menghubungi kami
+                    Anda bisa menghubungi kami melalui telepon, email, atau datang langsung ke alamat kami.
                 </p>
             </div>
 
@@ -111,11 +97,10 @@ title('Contact Us - Pondok Putri Apartment');
                     </div>
                     <h3 class="text-xl font-semibold text-[#133E87] mb-3 text-center">Telepon</h3>
                     <div class="space-y-2 text-center">
-                        <p class="text-gray-600">+62 812-3456-7890</p>
-                        <p class="text-gray-600">+62 812-3456-7891</p>
+                        <p class="text-gray-600">+62 813-3916-3939</p>
                         <a href="tel:+6281234567890"
                             class="inline-block mt-3 px-4 py-2 bg-[#608BC1] text-white rounded-lg hover:bg-[#4a6a99] transition-colors duration-300">
-                            <i class="fas fa-phone mr-2"></i>Telepon Sekarang
+                            <i class="fas fa-phone mr-2"></i>Hubungi Sekarang
                         </a>
                     </div>
                 </div>
@@ -128,8 +113,8 @@ title('Contact Us - Pondok Putri Apartment');
                     </div>
                     <h3 class="text-xl font-semibold text-[#133E87] mb-3 text-center">Email</h3>
                     <div class="space-y-2 text-center">
-                        <p class="text-gray-600">info@pondokputri.com</p>
-                        <p class="text-gray-600">reservasi@pondokputri.com</p>
+                        <p class="text-gray-600">admin@cavebeachbungalow.com</p>
+                        <p class="text-gray-600">cavebeachbungalow.com</p>
                         <a href="mailto:info@pondokputri.com"
                             class="inline-block mt-3 px-4 py-2 bg-[#608BC1] text-white rounded-lg hover:bg-[#4a6a99] transition-colors duration-300">
                             <i class="fas fa-envelope mr-2"></i>Kirim Email
@@ -145,11 +130,11 @@ title('Contact Us - Pondok Putri Apartment');
                     </div>
                     <h3 class="text-xl font-semibold text-[#133E87] mb-3 text-center">Alamat</h3>
                     <div class="space-y-2 text-center">
-                        <p class="text-gray-600">Jl. Beji Ayu IV No.3, Seminyak</p>
-                        <p class="text-gray-600">Kec. Kuta, Kabupaten Badung, Bali 80361</p>
+                        <p class="text-gray-600">Pura Giri Putri, Jl. Suana Karang Sari, Suana,</p>
+                        <p class="text-gray-600"> Kec. Nusa Penida, Kabupaten Klungkung, Bali 80771</p>
                         <a href="#maps"
                             class="inline-block mt-3 px-4 py-2 bg-[#608BC1] text-white rounded-lg hover:bg-[#4a6a99] transition-colors duration-300">
-                            <i class="fas fa-map mr-2"></i>Lihat Peta
+                            <i class="fas fa-map mr-2"></i>Lokasi Kami
                         </a>
                     </div>
                 </div>
@@ -184,7 +169,7 @@ title('Contact Us - Pondok Putri Apartment');
                 </h2>
                 <p class="mt-3 text-slate-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-duration="800"
                     data-aos-delay="200">
-                    Temukan lokasi Pondok Putri dengan mudah
+                    Temukan lokasi Cave Beach Bungalow di peta di bawah ini.
                 </p>
             </div>
 
@@ -193,7 +178,7 @@ title('Contact Us - Pondok Putri Apartment');
                 <div class="order-2 lg:order-1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
                     <div class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.5!2d115.2!3d-8.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwNDInMDAuMCJTIDExNcKwMTInMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.526920791504!2d115.5676803!3d-8.7079699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd276a14dbda8e7%3A0xfb23cef6e9195bbf!2sCave%20Beach%20Bungalow%20Nusa%20Penida!5e0!3m2!1sid!2sid!4v1693825600000!5m2!1sid!2sid"
                             width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade" class="w-full h-96">
                         </iframe>
@@ -206,8 +191,7 @@ title('Contact Us - Pondok Putri Apartment');
                         <div>
                             <h3 class="text-2xl font-bold text-[#133E87] mb-3">Lokasi Strategis</h3>
                             <p class="text-slate-600 leading-relaxed">
-                                Pondok Putri berlokasi di area strategis yang mudah dijangkau dari berbagai tempat
-                                penting di Bali.
+                                Cave Beach Bungalow terletak di jantung Nusa Penida, memberikan akses mudah ke berbagai atraksi utama seperti Pantai Kelingking, Angel's Billabong, dan Broken Beach. Nikmati kenyamanan menginap dengan pemandangan alam yang menakjubkan dan suasana yang tenang.
                             </p>
                         </div>
 
@@ -215,23 +199,11 @@ title('Contact Us - Pondok Putri Apartment');
                             <div class="bg-white rounded-xl p-4 border border-slate-100 shadow-sm">
                                 <div class="flex items-center gap-3">
                                     <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                                        <i class="fas fa-plane text-blue-600"></i>
+                                        <i class="fas fa-ship text-blue-600"></i>
                                     </div>
                                     <div>
-                                        <div class="font-semibold text-slate-900">Bandara</div>
-                                        <div class="text-sm text-slate-600">15 menit</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-white rounded-xl p-4 border border-slate-100 shadow-sm">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                                        <i class="fas fa-shopping-bag text-green-600"></i>
-                                    </div>
-                                    <div>
-                                        <div class="font-semibold text-slate-900">Pusat Kota</div>
-                                        <div class="text-sm text-slate-600">10 menit</div>
+                                        <div class="font-semibold text-slate-900">Pelabuhan</div>
+                                        <div class="text-sm text-slate-600">14 menit</div>
                                     </div>
                                 </div>
                             </div>
@@ -243,7 +215,7 @@ title('Contact Us - Pondok Putri Apartment');
                                     </div>
                                     <div>
                                         <div class="font-semibold text-slate-900">Pantai</div>
-                                        <div class="text-sm text-slate-600">5 menit</div>
+                                        <div class="text-sm text-slate-600">Depan Pantai</div>
                                     </div>
                                 </div>
                             </div>
@@ -255,7 +227,7 @@ title('Contact Us - Pondok Putri Apartment');
                                     </div>
                                     <div>
                                         <div class="font-semibold text-slate-900">Restoran</div>
-                                        <div class="text-sm text-slate-600">2 menit</div>
+                                        <div class="text-sm text-slate-600">5 menit</div>
                                     </div>
                                 </div>
                             </div>
@@ -263,11 +235,11 @@ title('Contact Us - Pondok Putri Apartment');
 
                         <div class="bg-gradient-to-r from-[#133E87] to-[#608BC1] rounded-2xl p-6 text-white">
                             <h4 class="text-lg font-semibold mb-2">Butuh Bantuan?</h4>
-                            <p class="text-white/90 mb-4">Tim kami siap membantu Anda menemukan lokasi dengan mudah</p>
-                            <a href="https://wa.me/6281234567890"
+                            <p class="text-white/90 mb-4">Hubungi Kami kapanpun! </p>
+                            <a href="https://wa.me/6281339163939"
                                 class="inline-flex items-center gap-2 bg-white text-[#133E87] px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors duration-300">
                                 <i class="fab fa-whatsapp"></i>
-                                Tanya Lokasi
+                                Hubungi via WhatsApp
                             </a>
                         </div>
                     </div>
@@ -278,15 +250,12 @@ title('Contact Us - Pondok Putri Apartment');
 
     <!-- ===== CTA SECTION ===== -->
     <section id="cta" class="scroll-mt-[84px] relative bg-slate-900">
-        <div
-            class="absolute inset-0 opacity-[0.06] bg-[url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1200&auto=format&fit=crop')] bg-cover">
-        </div>
         <div class="container relative z-10 mx-auto px-4 py-16 text-white">
             <div class="text-center max-w-3xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold">Siap Memulai Perjalanan?</h2>
-                <p class="mt-3 text-white/80">Hubungi kami sekarang untuk informasi lebih lanjut dan reservasi.</p>
+                <h2 class="text-3xl md:text-4xl font-bold">Nikmati Liburan Anda</h2>
+                <p class="mt-3 text-white/80">Hubungi kami sekarang! </p>
                 <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
-                    <a href="https://wa.me/6281234567890"
+                    <a href="https://wa.me/6281339163939"
                         class="inline-flex items-center gap-2 rounded-xl bg-green-500 hover:bg-green-600 text-white px-6 py-3 font-medium transition">
                         <i class="fab fa-whatsapp"></i>
                         WhatsApp
@@ -296,7 +265,7 @@ title('Contact Us - Pondok Putri Apartment');
                         <i class="fas fa-phone"></i>
                         Telepon
                     </a>
-                    <p class="basis-full text-sm text-white/60">Telepon: +62 812-3456-7890</p>
+                    <p class="basis-full text-sm text-white/60">Telepon: +62 813-3916-3939</p>
                 </div>
             </div>
         </div>

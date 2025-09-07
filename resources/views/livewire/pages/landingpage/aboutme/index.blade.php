@@ -37,9 +37,9 @@ mount(function () {
     ];
 
     $this->achievements = [
-        ['number' => '500+', 'label' => 'Penghuni Puas', 'icon' => 'fas fa-smile'],
-        ['number' => '15+', 'label' => 'Tahun Pengalaman', 'icon' => 'fas fa-award'],
-        ['number' => '98%', 'label' => 'Kepuasan Pelanggan', 'icon' => 'fas fa-heart'],
+        ['number' => '1000+', 'label' => 'Penghuni Puas', 'icon' => 'fas fa-smile'],
+        ['number' => '6+', 'label' => 'Tahun Pengalaman', 'icon' => 'fas fa-award'],
+        ['number' => '97%', 'label' => 'Kepuasan Pelanggan', 'icon' => 'fas fa-heart'],
         ['number' => '24/7', 'label' => 'Layanan Support', 'icon' => 'fas fa-clock']
     ];
 
@@ -153,27 +153,18 @@ mount(function () {
         <!-- Content -->
         <div class="relative z-10 container mx-auto px-4 pb-16 md:pb-24">
             <div class="max-w-4xl mx-auto text-center">
-                <!-- Badge -->
-                <span
-                    class="inline-flex items-center gap-2 rounded-full bg-white/80 backdrop-blur-sm px-6 py-3 text-sm font-medium border border-slate-200 shadow-lg"
-                    data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
-                    <i class="fas fa-building text-[#133E87]"></i>
-                    Tentang Kami
-                </span>
 
                 <!-- Main Heading -->
                 <h1 class="hero-head text-[clamp(2.5rem,8vw,5rem)] md:text-6xl lg:text-7xl font-black leading-tight mt-8 opacity-0"
                     id="hero-title">
-                    Cerita di Balik
-                    <span class="block">Pondok Putri</span>
+                    About Us
+                    <span class="block">Cave Beach Bungalow Nusa Penida</span>
                 </h1>
 
                 <!-- Description -->
                 <p class="mt-8 text-lg md:text-xl lg:text-2xl text-slate-600 leading-relaxed max-w-3xl mx-auto"
                     data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                    Lebih dari sekadar hunian, kami adalah keluarga yang berkomitmen memberikan pengalaman tinggal
-                    terbaik
-                    dengan standar kualitas tinggi dan pelayanan yang tulus.
+                    Kami berkomitmen memberikan kenyamanan terbaik bagi setiap penghuni dengan layanan yang memanjakan.
                 </p>
 
                 <!-- CTA Buttons -->
@@ -182,12 +173,12 @@ mount(function () {
                     <a href="#story"
                         class="inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-[#133E87] to-[#1e5bb8] hover:from-[#0f326e] hover:to-[#133E87] px-8 py-4 text-white font-semibold text-lg shadow-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-[0_20px_40px_rgba(19,62,135,0.3)] focus:outline-none focus:ring-4 focus:ring-blue-300/50">
                         <i class="fas fa-book-open text-xl"></i>
-                        <span>Baca Cerita Kami</span>
+                        <span>Mari Bersama Kami</span>
                     </a>
                     <a href="{{ route('landingpage.home') }}#rooms"
                         class="inline-flex items-center justify-center gap-3 rounded-2xl bg-white/80 hover:bg-white backdrop-blur-sm px-8 py-4 text-[#133E87] font-semibold text-lg border border-slate-200 transition-all duration-300 transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-300/50">
                         <i class="fas fa-home text-xl"></i>
-                        <span>Lihat Unit Kami</span>
+                        <span>Lihat Kamar</span>
                     </a>
                 </div>
             </div>
@@ -201,25 +192,13 @@ mount(function () {
                 <!-- Story Content -->
                 <div class="order-2 lg:order-1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-                        Perjalanan <span class="text-[#133E87]">15+ Tahun</span>
+                        6 Tahun <span class="text-[#133E87]">Perjalanan Kami</span>
                         <span class="block">Membangun Kepercayaan</span>
                     </h2>
 
                     <div class="space-y-6 text-slate-600 leading-relaxed">
                         <p>
-                            Pondok Putri dimulai dari visi sederhana: menciptakan hunian yang tidak hanya nyaman,
-                            tetapi juga menjadi tempat yang aman dan mendukung untuk setiap penghuni.
-                        </p>
-
-                        <p>
-                            Sejak 2008, kami telah melayani ribuan penghuni dengan berbagai kebutuhan - dari mahasiswa
-                            yang mencari tempat dekat kampus, hingga profesional yang membutuhkan akses mudah ke pusat
-                            bisnis.
-                        </p>
-
-                        <p>
-                            Setiap kamar, setiap fasilitas, dan setiap layanan dirancang dengan mempertimbangkan
-                            kenyamanan dan keamanan penghuni sebagai prioritas utama.
+                           Cave Beach Bungalow adalah usaha yang bergerak di bidang akomodasi yang lokasinya berada di bagian timur pulau Bali, tepatnya di pulau Nusa Penida. Villa ini terletak di Jalan Batununggul,Suana, Desa Karangsari, Desa Suana, Kecamatan Nusa Penida, Klungkung, Bali. Pemilik dari usaha villa ini adalah Bapak I Putu Rai Sudarta, SE. Awal mula Cave Beach Bungalow dibangun karena pemilik villa ini melihat potensi pariwisata yang berada di daerah Nusa Penida, Bali terus berkembang. Wisatawan yang datang ke pulau Bali untuk berliburan dan mencari kamar untuk menginap yang menjadi alasan Bapak Ketut Suyasa membangun villa ini di lahan miliknya. Cave Beach Bungalow telah beroperasi selama 5 (lima) tahun sejak awal berdirinya villa ini pada tahun 2019. Penginapan ini memiliki kolam renang outdoor dengan tema infinity berukuran 4×8 meter, delapan kamar yang dilengkapi dengan layanan free WiFi, kitchen set yang terletak dilobby, resepsionis 15 jam dan area parkir yang cukup luas. Adapun fasilitas yang disediakan di setiap kamar, yaitu tempat tidur single suite atau double suite, AC (Air Conditioner), kamar mandi, peralatan mandi, lemari pakaian, meja, kursi dan teras depan yang menghadap langsung ke laut.
                         </p>
                     </div>
 
@@ -250,14 +229,14 @@ mount(function () {
                 <!-- Story Image -->
                 <div class="order-1 lg:order-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
                     <div class="relative">
-                        <img src="{{ asset('img/about.png') }}" alt="Pondok Putri Story"
+                        <img src="{{ asset('img/image2.png') }}" alt="Pondok Putri Story"
                             class="w-full rounded-3xl shadow-2xl object-cover h-[500px]">
 
                         <!-- Floating Stats Card -->
                         <div class="absolute -bottom-8 -right-8 bg-white rounded-2xl p-6 shadow-xl border border-slate-100"
                             data-aos="zoom-in" data-aos-duration="800" data-aos-delay="800">
                             <div class="text-center">
-                                <div class="text-3xl font-bold text-[#133E87]">4.8</div>
+                                <div class="text-3xl font-bold text-[#133E87]">4.5</div>
                                 <div class="text-sm text-slate-600 mb-2">Rating Google</div>
                                 <div class="flex justify-center text-yellow-400 text-sm">
                                     <i class="fas fa-star"></i>
@@ -269,6 +248,68 @@ mount(function () {
                                 <div class="text-xs text-slate-500 mt-1">500+ ulasan</div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VISION & MISSION SECTION ===== -->
+    <section class="bg-gradient-to-br from-slate-50 to-blue-50/30 py-20 overflow-hidden">
+        <div class="container mx-auto px-4">
+            <!-- Vision -->
+            <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="800">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                    Visi & <span class="text-[#133E87]">Misi</span>
+                </h2>
+                <p class="text-slate-600 max-w-3xl mx-auto">
+                    Komitmen kami untuk memberikan pengalaman menginap terbaik di tepi pantai Nusa Penida
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Vision Card -->
+                <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-purple-600/5 rounded-3xl blur-2xl"></div>
+                    <div class="relative bg-white/80 backdrop-blur-xl p-8 rounded-3xl border border-white/30 shadow-xl hover:shadow-2xl transition-all duration-300 group">
+                        <div class="w-20 h-20 bg-gradient-to-br from-[#133E87] to-[#608BC1] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-mountain text-4xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-4">Visi</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Menjadi ikon kedamaian tepi pantai Nusa Penida, tempat setiap tamu menemukan ketenangan dan keindahan
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Mission Card -->
+                <div class="relative" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-purple-600/5 rounded-3xl blur-2xl"></div>
+                    <div class="relative bg-white/80 backdrop-blur-xl p-8 rounded-3xl border border-white/30 shadow-xl hover:shadow-2xl transition-all duration-300">
+                        <div class="w-20 h-20 bg-gradient-to-br from-[#133E87] to-[#608BC1] rounded-2xl flex items-center justify-center mb-6">
+                            <i class="fas fa-star text-4xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-4">Misi</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-4">
+                                <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-home text-[#133E87]"></i>
+                                </div>
+                                <p class="text-slate-600">Menyediakan akomodasi nyaman dengan sentuhan alam yang memukau.</p>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-heart text-[#133E87]"></i>
+                                </div>
+                                <p class="text-slate-600">Menginspirasi relaksasi melalui harmoni pantai dan pelayanan tulus.</p>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-camera text-[#133E87]"></i>
+                                </div>
+                                <p class="text-slate-600">Menciptakan kenangan liburan yang berkesan di setiap kunjungan.</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -331,51 +372,6 @@ mount(function () {
         </div>
     </section>
 
-    <!-- ===== TEAM SECTION ===== -->
-    <section class="bg-slate-50 py-20">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="800">
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                    Tim <span class="text-[#133E87]">Kami</span>
-                </h2>
-                <p class="text-slate-600 max-w-2xl mx-auto">
-                    Orang-orang hebat yang bekerja keras untuk memberikan pengalaman terbaik
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                @foreach($teamMembers as $index => $member)
-                <div class="team-card text-center p-8 bg-white rounded-3xl shadow-lg border border-slate-100"
-                    data-aos="fade-up" data-aos-duration="800" data-aos-delay="{{ 200 + ($index * 100) }}">
-                    <div
-                        class="w-32 h-32 bg-gradient-to-br from-slate-200 to-slate-300 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
-                        @if(file_exists(public_path($member['image'])))
-                        <img src="{{ asset($member['image']) }}" alt="{{ $member['name'] }}"
-                            class="w-full h-full object-cover">
-                        @else
-                        <i class="fas fa-user text-4xl text-slate-500"></i>
-                        @endif
-                    </div>
-
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">{{ $member['name'] }}</h3>
-                    <div class="text-[#133E87] font-medium mb-4">{{ $member['position'] }}</div>
-                    <p class="text-slate-600 mb-6 leading-relaxed">{{ $member['description'] }}</p>
-
-                    <!-- Social Links -->
-                    <div class="flex justify-center gap-3">
-                        @foreach($member['social'] as $social)
-                        <a href="#"
-                            class="w-10 h-10 bg-slate-100 hover:bg-[#133E87] hover:text-white rounded-full flex items-center justify-center transition-all duration-300">
-                            <i class="fab fa-{{ $social }}"></i>
-                        </a>
-                        @endforeach
-                    </div>
-                </div>
-                @endforeach
-            </div>
-        </div>
-    </section>
-
     <!-- ===== CTA SECTION ===== -->
     <section class="bg-gradient-to-br from-[#133E87] to-[#1e5bb8] py-20">
         <div class="container mx-auto px-4 text-center">
@@ -384,26 +380,17 @@ mount(function () {
                     Siap Bergabung dengan <span class="text-amber-300">Keluarga Kami?</span>
                 </h2>
                 <p class="text-white/90 text-lg mb-8 leading-relaxed">
-                    Mari jadikan Pondok Putri sebagai rumah kedua Anda.
-                    Kami siap memberikan pengalaman tinggal yang tak terlupakan.
+                    Mari nikmati villa dengan kenyaman yang terjamin, layanan terbaik, suasana tepi pantai dengan akses cepat ke pelabuhan dan tempat wisata populer di Nusa Penida.
                 </p>
-
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="{{ route('landingpage.contact') }}"
-                        class="inline-flex items-center justify-center gap-3 rounded-2xl bg-amber-400 hover:bg-amber-500 text-slate-900 px-8 py-4 font-semibold text-lg shadow-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-[0_20px_40px_rgba(251,191,36,0.3)] focus:outline-none focus:ring-4 focus:ring-amber-300/50">
-                        <i class="fas fa-calendar-check text-xl"></i>
-                        <span>Hubungi Kami</span>
-                    </a>
-
                     <a href="https://wa.me/6281234567890"
-                        class="inline-flex items-center justify-center gap-3 rounded-2xl bg-white/20 hover:bg-white/30 backdrop-blur-sm px-8 py-4 text-white font-semibold text-lg border border-white/30 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_20px_40px_rgba(255,255,255,0.1)] focus:outline-none focus:ring-4 focus:ring-white/40">
+                        class="inline-flex items-center justify-center gap-3 rounded-2xl bg-amber-400 hover:bg-amber-500 text-slate-900 px-8 py-4 font-semibold text-lg shadow-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-[0_20px_40px_rgba(251,191,36,0.3)] focus:outline-none focus:ring-4 focus:ring-amber-300/50">
                         <i class="fab fa-whatsapp text-xl"></i>
                         <span>Hubungi Kami</span>
                     </a>
                 </div>
 
                 <div class="mt-6 text-white/70 text-sm">
-                    <p>Telepon: +62 812-3456-7890 • Email: info@pondokputri.com</p>
+                    <p>Telepon: +62 813-3916-3939 • Email: admin@cavebeachbungalow.com</p>
                 </div>
             </div>
         </div>
@@ -520,33 +507,6 @@ mount(function () {
                             duration: 1,
                             ease: 'power3.out',
                             delay: index * 0.15,
-                            scrollTrigger: {
-                                trigger: card,
-                                start: 'top 80%',
-                                toggleActions: 'play none none reverse'
-                            }
-                        }
-                    );
-                });
-            }
-
-            // Animasi team cards dengan scale effect
-            const teamCards = gsap.utils.toArray('.team-card');
-            if (teamCards.length > 0 && window.ScrollTrigger) {
-                teamCards.forEach((card, index) => {
-                    gsap.fromTo(card,
-                        {
-                            opacity: 0,
-                            y: 100,
-                            scale: 0.9
-                        },
-                        {
-                            opacity: 1,
-                            y: 0,
-                            scale: 1,
-                            duration: 1,
-                            ease: 'power3.out',
-                            delay: index * 0.2,
                             scrollTrigger: {
                                 trigger: card,
                                 start: 'top 80%',
