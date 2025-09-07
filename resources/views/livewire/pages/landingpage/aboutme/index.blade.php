@@ -382,7 +382,7 @@ mount(function () {
                 <p class="text-white/90 text-lg mb-8 leading-relaxed">
                     Mari nikmati villa dengan kenyaman yang terjamin, layanan terbaik, suasana tepi pantai dengan akses cepat ke pelabuhan dan tempat wisata populer di Nusa Penida.
                 </p>
-                    <a href="https://wa.me/6281234567890"
+                    <a href="https://wa.me/6283114380118"
                         class="inline-flex items-center justify-center gap-3 rounded-2xl bg-amber-400 hover:bg-amber-500 text-slate-900 px-8 py-4 font-semibold text-lg shadow-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-[0_20px_40px_rgba(251,191,36,0.3)] focus:outline-none focus:ring-4 focus:ring-amber-300/50">
                         <i class="fab fa-whatsapp text-xl"></i>
                         <span>Hubungi Kami</span>

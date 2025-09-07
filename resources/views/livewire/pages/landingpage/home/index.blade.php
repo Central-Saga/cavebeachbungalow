@@ -469,11 +469,11 @@ mount(function () {
             class="inline-flex items-center gap-2 rounded-xl bg-amber-400 hover:bg-amber-500 text-slate-900 px-6 py-3 font-medium transition">
             Lihat Tipe Kamar
           </a>
-          <a href="https://wa.me/6281339163939"
+          <a href="https://wa.me/6283114380118"
             class="inline-flex items-center gap-2 rounded-xl bg-white/10 hover:bg-white/20 px-6 py-3 text-white backdrop-blur transition">
             WhatsApp
           </a>
-          <p class="basis-full text-sm text-white/60">Telepon: +62 813-3916-3939</p>
+          <p class="basis-full text-sm text-white/60">Telepon: +62 831‑1438‑0118</p>
         </div>
       </div>
     </div>

@@ -217,7 +217,7 @@ mount(function() {
                 Booking mudah dan cepat. Hubungi kami sekarang untuk pertanyaan lebih lanjut.
             </p>
             <div class="flex flex-wrap items-center justify-center gap-4">
-                <a href="https://wa.me/6281339163939"
+                <a href="https://wa.me/6283114380118"
                     class="inline-flex items-center gap-2 rounded-xl bg-green-600 hover:bg-green-700 px-6 py-3 text-white font-medium transition-all duration-300 transform hover:scale-105">
                     <i class="fab fa-whatsapp"></i>
                     Hubungi Kami

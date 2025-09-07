@@ -719,7 +719,7 @@ $save = function() {
                         <div class="bg-slate-50/80 backdrop-blur-sm rounded-2xl p-6 border border-slate-200">
                             <h3 class="text-xl font-bold text-slate-900 mb-4">Butuh Bantuan?</h3>
                             <p class="text-slate-600 mb-4">Tim kami siap membantu Anda dengan reservasi.</p>
-                            <a href="https://wa.me/6281234567890?text=Saya ingin bertanya tentang reservasi"
+                            <a href="https://wa.me/6283114380118?text=Saya ingin bertanya tentang reservasi"
                                 class="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-green-600 hover:bg-green-700 px-6 py-3 text-white font-medium transition-all duration-300">
                                 <i class="fab fa-whatsapp"></i>
                                 Chat WhatsApp

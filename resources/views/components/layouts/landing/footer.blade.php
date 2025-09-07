@@ -39,7 +39,7 @@
                     </li>
                     <li class="flex items-center space-x-2">
                         <i class="fas fa-phone text-[#608BC1]"></i>
-                        <span class="text-gray-600">0813-3916-3939</span>
+                        <span class="text-gray-600">0831‑1438‑0118</span>
                     </li>
                 </ul>
             </div>

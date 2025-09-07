@@ -82,7 +82,7 @@ mount(function($id) {
                         <i class="fas fa-calendar-check"></i>
                         Booking Sekarang
                     </a>
-                    <a href="https://wa.me/6281234567890?text=Saya tertarik dengan {{ $tipeKamar->nama_tipe }}"
+                    <a href="https://wa.me/6283114380118?text=Saya tertarik dengan {{ $tipeKamar->nama_tipe }}"
                         class="inline-flex items-center gap-2 rounded-xl bg-green-600 hover:bg-green-700 px-6 py-3 text-white font-medium transition-all duration-300 transform hover:scale-105">
                         <i class="fab fa-whatsapp"></i>
                         Tanya via WhatsApp
@@ -271,7 +271,7 @@ mount(function($id) {
                         data-aos-duration="800" data-aos-delay="200">
                         <h3 class="text-xl font-bold text-slate-900 mb-4">Butuh Bantuan?</h3>
                         <p class="text-slate-600 mb-4">Tim kami siap kapanpun anda membutuhkan kami</p>
-                        <a href="https://wa.me/6281339163939?text=Halo%20Cave%20Beach%20Bungalow%2C%20saya%20mau%20bertanya%20tentang%20{{ urlencode($tipeKamar->nama_tipe) }}" 
+                        <a href="https://wa.me/6283114380118?text=Halo%20Cave%20Beach%20Bungalow%2C%20saya%20mau%20bertanya%20tentang%20{{ urlencode($tipeKamar->nama_tipe) }}" 
                             class="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-green-600 hover:bg-green-700 px-6 py-3 text-white font-medium transition-all duration-300">
                             <i class="fab fa-whatsapp"></i>
                             WhatsApp

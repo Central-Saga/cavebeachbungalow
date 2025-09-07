@@ -42,7 +42,7 @@ title('Contact Us - Cave Beach Bungalow');
                 <!-- CTA -->
                 <div class="mt-10 md:mt-12 flex flex-col sm:flex-row items-stretch sm:items-center gap-4"
                     data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
-                    <a href="https://wa.me/6281339163939"
+                    <a href="https://wa.me/6283114380118"
                         class="inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 px-8 py-4 text-white font-semibold text-lg shadow-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-[0_20px_40px_rgba(34,197,94,0.3)] focus:outline-none focus:ring-4 focus:ring-green-300/50"
                         aria-label="Hubungi kami via WhatsApp">
                         <i class="fab fa-whatsapp text-xl"></i>
@@ -97,7 +97,7 @@ title('Contact Us - Cave Beach Bungalow');
                     </div>
                     <h3 class="text-xl font-semibold text-[#133E87] mb-3 text-center">Telepon</h3>
                     <div class="space-y-2 text-center">
-                        <p class="text-gray-600">+62 813-3916-3939</p>
+                        <p class="text-gray-600">+62 831‑1438‑0118/p>
                         <a href="tel:+6281234567890"
                             class="inline-block mt-3 px-4 py-2 bg-[#608BC1] text-white rounded-lg hover:bg-[#4a6a99] transition-colors duration-300">
                             <i class="fas fa-phone mr-2"></i>Hubungi Sekarang
@@ -147,11 +147,11 @@ title('Contact Us - Cave Beach Bungalow');
                     <div class="grid grid-cols-2 gap-4 text-lg mb-4">
                         <div class="text-left">
                             <p class="font-semibold text-[#133E87]">Senin - Jumat</p>
-                            <p class="text-gray-600">08:00 - 22:00</p>
+                            <p class="text-gray-600">08:00 - 23:00</p>
                         </div>
                         <div class="text-left">
                             <p class="font-semibold text-[#133E87]">Sabtu - Minggu</p>
-                            <p class="text-gray-600">07:00 - 23:00</p>
+                            <p class="text-gray-600">07:00 - 22:00</p>
                         </div>
                     </div>
                     <p class="text-gray-500 text-sm">*Reservasi online tersedia 24/7</p>
@@ -236,7 +236,7 @@ title('Contact Us - Cave Beach Bungalow');
                         <div class="bg-gradient-to-r from-[#133E87] to-[#608BC1] rounded-2xl p-6 text-white">
                             <h4 class="text-lg font-semibold mb-2">Butuh Bantuan?</h4>
                             <p class="text-white/90 mb-4">Hubungi Kami kapanpun! </p>
-                            <a href="https://wa.me/6281339163939"
+                            <a href="https://wa.me/6283114380118"
                                 class="inline-flex items-center gap-2 bg-white text-[#133E87] px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors duration-300">
                                 <i class="fab fa-whatsapp"></i>
                                 Hubungi via WhatsApp
@@ -255,7 +255,7 @@ title('Contact Us - Cave Beach Bungalow');
                 <h2 class="text-3xl md:text-4xl font-bold">Nikmati Liburan Anda</h2>
                 <p class="mt-3 text-white/80">Hubungi kami sekarang! </p>
                 <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
-                    <a href="https://wa.me/6281339163939"
+                    <a href="https://wa.me/6283114380118"
                         class="inline-flex items-center gap-2 rounded-xl bg-green-500 hover:bg-green-600 text-white px-6 py-3 font-medium transition">
                         <i class="fab fa-whatsapp"></i>
                         WhatsApp
