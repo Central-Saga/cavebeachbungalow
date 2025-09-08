@@ -4,7 +4,7 @@ use function Livewire\Volt\{ layout, title, state, mount };
 use App\Models\TipeKamar;
 
 layout('components.layouts.landing');
-title('Tipe Kamar - Pondok Putri Apartment');
+title('Tipe Kamar - Cave Beach Bungalow');
 
 state(['tipeKamar' => []]);
 

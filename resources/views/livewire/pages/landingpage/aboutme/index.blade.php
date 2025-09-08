@@ -3,39 +3,20 @@
 use function Livewire\Volt\{ layout, title, state, mount };
 
 layout('components.layouts.landing');
-title('Tentang Kami - Pondok Putri Apartment');
+title('Tentang Kami - Cave Beach Bungalow');
 
+// Add video section data
 state([
-    'teamMembers' => [],
+    'videoUrl' => 'https://www.youtube.com/embed/jOSqrWmirO8',
+    'videoTitle' => 'Company Profile Cave Beach Bungalow',
+
+]);
+state([
     'achievements' => [],
     'values' => []
 ]);
 
 mount(function () {
-    $this->teamMembers = [
-        [
-            'name' => 'Sarah Putri',
-            'position' => 'Founder & CEO',
-            'image' => 'img/asset/team-1.jpg',
-            'description' => 'Pengalaman 15+ tahun di industri properti dan hospitality.',
-            'social' => ['linkedin', 'instagram', 'twitter']
-        ],
-        [
-            'name' => 'Ahmad Rahman',
-            'position' => 'Property Manager',
-            'image' => 'img/asset/team-2.jpg',
-            'description' => 'Spesialis manajemen properti dengan fokus pada customer satisfaction.',
-            'social' => ['linkedin', 'instagram']
-        ],
-        [
-            'name' => 'Maya Sari',
-            'position' => 'Customer Relations',
-            'image' => 'img/asset/team-3.jpg',
-            'description' => 'Memastikan setiap penghuni merasa seperti di rumah sendiri.',
-            'social' => ['instagram', 'whatsapp']
-        ]
-    ];
-
     $this->achievements = [
         ['number' => '1000+', 'label' => 'Penghuni Puas', 'icon' => 'fas fa-smile'],
         ['number' => '6+', 'label' => 'Tahun Pengalaman', 'icon' => 'fas fa-award'],
@@ -95,6 +76,24 @@ mount(function () {
         background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
     }
 
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+        height: 0;
+        overflow: hidden;
+        border-radius: 1rem;
+        box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    }
+    
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
     .card-hover {
         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -139,7 +138,6 @@ mount(function () {
     }
 </style>
 
-<div class="text-slate-800">
     <!-- ===== HERO SECTION ===== -->
     <section id="hero"
         class="relative min-h-[calc(100svh-var(--nav-h))] md:min-h-[calc(100dvh-var(--nav-h))] pt-[calc(var(--nav-h)+2rem)] overflow-hidden">
@@ -229,7 +227,7 @@ mount(function () {
                 <!-- Story Image -->
                 <div class="order-1 lg:order-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
                     <div class="relative">
-                        <img src="{{ asset('img/image2.png') }}" alt="Pondok Putri Story"
+                        <img src="{{ asset('img/image2.png') }}" alt="Cave Beach Bungalow Story"
                             class="w-full rounded-3xl shadow-2xl object-cover h-[500px]">
 
                         <!-- Floating Stats Card -->
@@ -249,6 +247,37 @@ mount(function () {
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<div class="text-slate-800">
+    <!-- Company Profile Video Section -->
+    <section class="relative py-16 md:py-24 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#133E87] to-[#608BC1] bg-clip-text text-transparent mb-4" data-aos="fade-up">
+                    Company Profile Video
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Kenali lebih dekat Cave Beach Bungalow melalui video company profile kami
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto" data-aos="zoom-in" data-aos-delay="200">
+                <div class="video-container shadow-2xl">
+                    <iframe
+                        src="https://www.youtube.com/embed/jOSqrWmirO8"
+                        title="Cave Beach Bungalow Company Profile"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
                 </div>
             </div>
         </div>

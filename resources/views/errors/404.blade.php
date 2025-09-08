@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Tidak Ditemukan - Pondok Putri</title>
+    <title>Halaman Tidak Ditemukan - Cave Beach Bungalow</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 

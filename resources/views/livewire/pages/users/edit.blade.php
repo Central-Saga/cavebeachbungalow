@@ -82,7 +82,7 @@ $save = function() {
                                             Edit User
                                         </h1>
                                         <p class="mt-2 text-sm text-gray-600 dark:text-gray-300 font-medium">
-                                            Edit user "{{ $user->name }}" untuk sistem Pondok Putri
+                                            Edit user "{{ $user->name }}" untuk sistem Cave Beach Bungalow
                                         </p>
                                     </div>
                                 </div>

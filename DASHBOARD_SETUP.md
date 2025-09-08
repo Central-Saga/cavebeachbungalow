@@ -1,4 +1,4 @@
-# Setup Dashboard - Pondok Putri Hotel
+# Setup Dashboard - Cave Beach Bungalow
 
 ## Struktur File Baru
 

@@ -8,7 +8,7 @@ use App\Models\Pembayaran;
 use Illuminate\Support\Facades\Storage;
 
 layout('components.layouts.landing');
-title('Detail Reservasi - Pondok Putri Apartment');
+title('Detail Reservasi - Cave Beach Bungalow');
 
 state([
     'reservasi' => null,
@@ -54,8 +54,22 @@ $uploadBuktiPembayaran = function() {
     $this->isLoading = true;
 
     try {
+        // Debug log sebelum upload
+        \Log::info('Attempting to upload file', [
+            'original_name' => $this->bukti_transfer->getClientOriginalName(),
+            'mime_type' => $this->bukti_transfer->getMimeType(),
+            'size' => $this->bukti_transfer->getSize()
+        ]);
+
         // Upload file
         $path = $this->bukti_transfer->store('bukti-pembayaran', 'public');
+        
+        // Debug log setelah upload
+        \Log::info('File uploaded successfully', [
+            'path' => $path,
+            'exists' => Storage::disk('public')->exists($path),
+            'url' => Storage::disk('public')->url($path)
+        ]);
 
         // Buat record pembayaran
         Pembayaran::create([

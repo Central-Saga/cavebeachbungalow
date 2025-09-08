@@ -41,7 +41,22 @@
                         <i class="fas fa-phone text-[#608BC1]"></i>
                         <span class="text-gray-600">0831‑1438‑0118</span>
                     </li>
-                </ul>
+                
+                <!-- Social Media -->
+                <div class="mt-4">
+                    <h3 class="text-lg font-semibold mb-3">Ikuti Kami</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/share/17ECP4CP8C/?mibextid=wwXIfr" target="_blank" class="text-[#608BC1] hover:text-blue-700 transition-colors duration-200">
+                            <i class="fab fa-facebook fa-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com/cavebeach_bungalow" target="_blank" class="text-[#608BC1] hover:text-pink-600 transition-colors duration-200">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="https://youtube.com/@cavebeachbungalows" target="_blank" class="text-[#608BC1] hover:text-red-600 transition-colors duration-200">
+                            <i class="fab fa-youtube fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 

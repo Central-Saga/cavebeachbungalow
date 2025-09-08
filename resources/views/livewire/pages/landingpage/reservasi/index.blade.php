@@ -8,7 +8,7 @@ use App\Models\Pelanggan;
 use App\Helpers\ReservasiHelper;
 
 layout('components.layouts.landing');
-title('Reservasi - Pondok Putri Apartment');
+title('Reservasi - Cave Beach Bungalow');
 
 state([
     'kode_reservasi' => '',

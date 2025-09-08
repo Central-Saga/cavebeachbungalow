@@ -11,7 +11,7 @@ title('Contact Us - Cave Beach Bungalow');
     <!-- ===== HERO ===== -->
     <section id="hero" class="relative min-h-[calc(100svh-84px)] pt-32 overflow-hidden">
         <!-- BG Cover Image -->
-        <img src="{{ asset('img/image2.png') }}" alt="Pondok Putri Apartment" fetchpriority="high"
+        <img src="{{ asset('img/image2.png') }}" alt="Cave Beach Bungalow" fetchpriority="high"
             class="absolute inset-0 w-full h-full object-cover object-center">
 
         <!-- Overlay gelap -->

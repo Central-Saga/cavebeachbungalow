@@ -317,8 +317,6 @@ mount(function () {
             }
             @endphp
 
-
-
             <img src="{{ $imgSrc }}" alt="{{ $tipe->nama_tipe }}"
               class="h-56 w-full object-cover group-hover:scale-110 transition-transform duration-700"
               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" loading="lazy">
@@ -334,9 +332,6 @@ mount(function () {
             </div>
             <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
             <div class="absolute top-3 right-3">
-              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-[#133E87] text-white">
-                {{ $tipe->kode_tipe }}
-              </span>
             </div>
             <div class="absolute bottom-3 left-3 text-white text-sm rounded-full bg-black/40 backdrop-blur px-3 py-1">
               Tersedia

@@ -295,4 +295,4 @@ Jika Anda mengalami masalah atau memiliki pertanyaan, silakan:
 
 ---
 
-**Pondok Putri Apartment Management System** - Solusi modern untuk manajemen apartemen yang efisien dan user-friendly. 🏨✨
+**Cave Beach Bungalow Management System** - Solusi modern untuk manajemen apartemen yang efisien dan user-friendly. 🏨✨

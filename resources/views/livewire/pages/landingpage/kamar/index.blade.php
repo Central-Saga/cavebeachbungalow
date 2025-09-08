@@ -14,7 +14,7 @@ new #[Layout('components.layouts.landing')] class extends Component {
 <div class="py-6">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-8 text-center">
-            <h1 class="text-3xl font-bold text-gray-900 dark:text-white">Daftar Kamar Pondok Putri</h1>
+            <h1 class="text-3xl font-bold text-gray-900 dark:text-white">Daftar Kamar Cave Beach Bungalow</h1>
             <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Pilih tipe kamar sesuai kebutuhan Anda.</p>
         </div>
         <div class="grid md:grid-cols-3 gap-8">

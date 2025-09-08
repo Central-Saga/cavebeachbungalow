@@ -32,7 +32,7 @@
 
             <!-- Footer -->
             <div class="text-center text-sm text-gray-500 dark:text-gray-400 mt-4">
-                <p>&copy; {{ date('Y') }} Pondok Putri Hotel. All rights reserved.</p>
+                <p>&copy; {{ date('Y') }} Cave Beach Bungalow. All rights reserved.</p>
             </div>
         </div>
     </div>

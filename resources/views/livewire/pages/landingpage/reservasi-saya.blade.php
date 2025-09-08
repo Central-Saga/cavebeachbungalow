@@ -9,7 +9,7 @@ use App\Models\Pembayaran;
 use Illuminate\Support\Facades\Storage;
 
 layout('components.layouts.landing');
-title('Reservasi Saya - Pondok Putri Apartment');
+title('Reservasi Saya - Cave Beach Bungalow');
 
 uses([WithFileUploads::class]);
 
@@ -354,7 +354,7 @@ $uploadBuktiPembayaran = function() {
                             </div>
                             <div class="flex justify-between">
                                 <span class="text-blue-700">Atas Nama:</span>
-                                <span class="font-medium text-blue-900">PT. Pondok Putri Apartment</span>
+                                <span class="font-medium text-blue-900">PT. CAVE BEACH BUNGALOW</span>
                             </div>
                         </div>
                         <div class="mt-3 p-2 bg-blue-100 rounded border border-blue-200">

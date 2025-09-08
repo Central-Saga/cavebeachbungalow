@@ -6,7 +6,7 @@ use function Livewire\Volt\{
 use App\Models\FasilitasKamar;
 
 layout('components.layouts.landing');
-title('Fasilitas - Pondok Putri Apartment');
+title('Fasilitas - Cave Beach Bungalow');
 
 state([
     'fasilitas' => []

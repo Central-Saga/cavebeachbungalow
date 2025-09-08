@@ -103,7 +103,7 @@ $save = function() {
                                             Tambah Kamar Baru
                                         </h1>
                                         <p class="mt-2 text-sm text-gray-600 dark:text-gray-300 font-medium">
-                                            Buat kamar baru untuk sistem Pondok Putri
+                                            Buat kamar baru untuk sistem Cave Beach Bungalow
                                         </p>
                                     </div>
                                 </div>

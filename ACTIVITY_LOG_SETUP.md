@@ -1,4 +1,4 @@
-# Setup Activity Log - Pondok Putri Hotel
+# Setup Activity Log - Cave Beach Bungalow
 
 ## 🚀 **Overview**
 

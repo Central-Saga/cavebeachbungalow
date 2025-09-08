@@ -1,4 +1,4 @@
-# Setup Tema - Pondok Putri Hotel
+# Setup Tema - Cave Beach Bungalow
 
 ## Masalah yang Diperbaiki
 
