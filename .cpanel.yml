@@ -1,0 +1,10 @@
+deployment:
+  tasks:
+    - export REPO=/home/cavc2394/repositories/cavebeachbungalow
+    - export DOCROOT=/home/cavc2394/public_html
+    # jika public_html masih folder/berkas, hapus dulu agar bisa diganti symlink
+    - /bin/rm -rf $DOCROOT
+    # jadikan public_html symlink ke folder public Laravel di repo
+    - /bin/ln -sfn $REPO/public $DOCROOT
+    # symlink storage publik (tanpa php artisan)
+    - /bin/ln -sfn $REPO/storage/app/public $REPO/public/storage
