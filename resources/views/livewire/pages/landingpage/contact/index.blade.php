@@ -97,8 +97,9 @@ title('Contact Us - Cave Beach Bungalow');
                     </div>
                     <h3 class="text-xl font-semibold text-[#133E87] mb-3 text-center">Telepon</h3>
                     <div class="space-y-2 text-center">
-                        <p class="text-gray-600">+62 831‑1438‑0118/p>
-                        <a href="tel:+6281234567890"
+                        <p class="text-gray-600">+62 831‑1438‑0118
+                        </p>
+                        <a href="telp:6283114380118"
                             class="inline-block mt-3 px-4 py-2 bg-[#608BC1] text-white rounded-lg hover:bg-[#4a6a99] transition-colors duration-300">
                             <i class="fas fa-phone mr-2"></i>Hubungi Sekarang
                         </a>
@@ -114,8 +115,8 @@ title('Contact Us - Cave Beach Bungalow');
                     <h3 class="text-xl font-semibold text-[#133E87] mb-3 text-center">Email</h3>
                     <div class="space-y-2 text-center">
                         <p class="text-gray-600">admin@cavebeachbungalow.com</p>
-                        <p class="text-gray-600">cavebeachbungalow.com</p>
-                        <a href="mailto:info@pondokputri.com"
+                        <p class="text-gray-600">cavebeachbungalow2025.com</p>
+                        <a href="mailto:cavebeachbungalow2025.com"
                             class="inline-block mt-3 px-4 py-2 bg-[#608BC1] text-white rounded-lg hover:bg-[#4a6a99] transition-colors duration-300">
                             <i class="fas fa-envelope mr-2"></i>Kirim Email
                         </a>
@@ -137,6 +138,25 @@ title('Contact Us - Cave Beach Bungalow');
                             <i class="fas fa-map mr-2"></i>Lokasi Kami
                         </a>
                     </div>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-slate-100 mb-16" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                <div class="w-16 h-16 bg-[#608BC1] rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-hashtag text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-[#133E87] mb-3 text-center">Sosial Media</h3>
+                <div class="flex justify-center gap-6 mt-4">
+                    <a href="https://www.facebook.com/share/17ECP4CP8C/?mibextid=wwXIfr" target="_blank" class="text-[#608BC1] hover:text-blue-700 transition-colors duration-200" aria-label="Facebook">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/cavebeach_bungalow" target="_blank" class="text-[#608BC1] hover:text-pink-600 transition-colors duration-200" aria-label="Instagram">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://youtube.com/@cavebeachbungalows" target="_blank" class="text-[#608BC1] hover:text-red-600 transition-colors duration-200" aria-label="YouTube">
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </a>
                 </div>
             </div>
 
@@ -260,12 +280,12 @@ title('Contact Us - Cave Beach Bungalow');
                         <i class="fab fa-whatsapp"></i>
                         WhatsApp
                     </a>
-                    <a href="tel:+6281234567890"
+                    <a href="tel:+6283114380118"
                         class="inline-flex items-center gap-2 rounded-xl bg-white/10 hover:bg-white/20 px-6 py-3 text-white backdrop-blur transition">
                         <i class="fas fa-phone"></i>
                         Telepon
                     </a>
-                    <p class="basis-full text-sm text-white/60">Telepon: +62 813-3916-3939</p>
+                    <p class="basis-full text-sm text-white/60">Telepon: +62 831‑1438‑0118 </p>
                 </div>
             </div>
         </div>

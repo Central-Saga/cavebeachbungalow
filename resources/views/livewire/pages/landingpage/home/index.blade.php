@@ -109,7 +109,7 @@ mount(function () {
            </h2>
         </div>
 
-        <!-- Description (copy baru) -->
+        <!-- Description -->
         <p class="mb-10 md:mb-12 text-lg md:text-xl lg:text-2xl text-white/95 leading-relaxed max-w-2xl"
           data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
           Villa nyaman dengan panorama pantai, hanya 14 menit dari pelabuhan boat. Dilengkapi kolam renang pribadi, Wi-Fi stabil, serta sistem keamanan terjaga. Lokasi strategis dekat destinasi wisata populer, ideal untuk liburan tenang maupun perjalanan singkat.

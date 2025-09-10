@@ -299,7 +299,7 @@ $uploadBuktiPembayaran = function() {
                                     <button wire:click="selectReservasi({{ $reservasi->id }})"
                                         class="inline-flex items-center gap-2 bg-[#133E87] hover:bg-[#0f326e] text-white px-4 py-2 rounded-lg font-medium transition-colors">
                                         <i class="fas fa-credit-card"></i>
-                                        Bayar Sisa
+                                        Bayar Sekarang
                                     </button>
                                     @endif
                                     <a href="{{ route('landingpage.reservasi.detail', $reservasi->id) }}"

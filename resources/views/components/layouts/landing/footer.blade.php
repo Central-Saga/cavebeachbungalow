@@ -19,12 +19,12 @@
                 <ul class="space-y-2">
                     <li><a href="#hero"
                             class="text-gray-600 hover:text-[#608BC1] transition-colors duration-200">Beranda</a></li>
-                    <li><a href="#about"
-                            class="text-gray-600 hover:text-[#608BC1] transition-colors duration-200">Tentang</a>
+                    <li><a href="#aboutme"
+                            class="text-gray-600 hover:text-[#608BC1] transition-colors duration-200">About Us</a>
                     </li>
-                    <li><a href="#fasilitas"
-                            class="text-gray-600 hover:text-[#608BC1] transition-colors duration-200">Fasilitas</a></li>
-                    <li><a href="#booking"
+                    <li><a href="#gallery"
+                            class="text-gray-600 hover:text-[#608BC1] transition-colors duration-200">Gallery</a></li>
+                    <li><a href="#villas"
                             class="text-gray-600 hover:text-[#608BC1] transition-colors duration-200">Villas</a></li>
                 </ul>
             </div>

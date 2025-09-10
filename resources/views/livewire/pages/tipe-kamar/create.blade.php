@@ -91,7 +91,7 @@ $save = function() {
 
                 GaleriKamar::create([
                     'tipe_kamar_id' => $tipeKamar->id,
-                    'url_foto' => Storage::url($path),
+                    'url_foto' => $path,
                 ]);
             }
         }

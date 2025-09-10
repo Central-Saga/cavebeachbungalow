@@ -66,7 +66,7 @@
             @error('bukti_transfer')
             <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
             @enderror
-            <p class="mt-1 text-sm text-gray-500">Format: JPG, PNG, GIF. Maksimal 2MB.</p>
+            <p class="mt-1 text-sm text-gray-500">Format: JPG, PNG, GIF. Maksimal 10MB.</p>
         </div>
 
         <div>

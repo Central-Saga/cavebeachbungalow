@@ -68,23 +68,21 @@ class PembayaranController extends Controller
             ->with('success', 'Pembayaran berhasil dihapus.');
     }
 
+    public function showBukti(Pembayaran $pembayaran)
+    {
+        $path = storage_path('app/public/' . $pembayaran->bukti_path);
+        if (!file_exists($path)) abort(404);
+        return response()->file($path);
+    }
+
+
+
     public function downloadBukti(Pembayaran $pembayaran)
     {
-        if (!$pembayaran->bukti_path) {
-            return back()->with('error', 'File bukti pembayaran tidak ditemukan.');
-        }
-
         $path = storage_path('app/public/' . $pembayaran->bukti_path);
-        
-        if (!file_exists($path)) {
-            \Log::error('File bukti pembayaran tidak ditemukan di disk', [
-                'path' => $path,
-                'pembayaran_id' => $pembayaran->id
-            ]);
-            return back()->with('error', 'File bukti pembayaran tidak ditemukan di sistem.');
-        }
-
-        return response()->download($path, 'bukti-pembayaran-' . $pembayaran->id . '.' . pathinfo($path, PATHINFO_EXTENSION));
+        if (!file_exists($path)) abort(404);
+        $filename = 'bukti-pembayaran-' . $pembayaran->id . '.' . pathinfo($path, PATHINFO_EXTENSION);
+        return response()->download($path, $filename);
     }
 
     // API untuk mendapatkan data pembayaran berdasarkan status

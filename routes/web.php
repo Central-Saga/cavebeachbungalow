@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
+use App\Http\Controllers\PembayaranController;
 
 // Test theme route
 Route::get('/test-theme', function () {
@@ -82,7 +83,12 @@ Route::middleware(['auth', 'verified', 'redirect.role:dashboard_access'])->prefi
         Volt::route('/reservasi/{reservasi}/edit', 'pages.reservasi.edit')->name('reservasi.edit');
 
         // Pembayaran Management - Admin only
-        Volt::route('/verifikasi-pembayaran', 'pages.admin.verifikasi-pembayaran')->name('verifikasi-pembayaran');
+        Volt::route('/verifikasi-pembayaran', 'pages.admin.verifikasi-pembayaran')
+            ->name('verifikasi-pembayaran');
+        Route::get('/pembayaran/{pembayaran}/bukti', [PembayaranController::class, 'showBukti'])
+            ->name('pembayaran.bukti');
+        Route::get('/pembayaran/{pembayaran}/download', [PembayaranController::class, 'downloadBukti'])
+            ->name('pembayaran.download');
     });
 });
 

@@ -534,34 +534,30 @@ with(function () {
                                                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                                 </svg>
                                             </button>
+
                                             @if($pembayaran->bukti_path)
-                                            <a href="{{ Storage::disk('public')->url($pembayaran->bukti_path) }}"
-                                                target="_blank"
-                                                class="group p-3 text-emerald-600 dark:text-emerald-400 hover:text-emerald-900 dark:hover:text-emerald-300 transition-all duration-300 bg-emerald-50 dark:bg-emerald-900/20 rounded-xl hover:bg-emerald-100 dark:hover:bg-emerald-800/30 border border-emerald-200/50 dark:border-emerald-700/50 hover:shadow-lg transform hover:-translate-y-1"
-                                                title="Lihat bukti transfer">
-                                                <svg class="h-5 w-5" fill="none" stroke="currentColor"
-                                                    viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
-                                                    </path>
+                                            <a href="{{ route('admin.pembayaran.bukti', $pembayaran->id) }}"
+                                            target="_blank"
+                                            class="group p-3 text-emerald-600 dark:text-emerald-400 hover:text-emerald-900 dark:hover:text-emerald-300 transition-all duration-300 bg-emerald-50 dark:bg-emerald-900/20 rounded-xl hover:bg-emerald-100 dark:hover:bg-emerald-800/30 border border-emerald-200/50 dark:border-emerald-700/50 hover:shadow-lg transform hover:-translate-y-1"
+                                            title="Lihat bukti transfer">
+                                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
                                                 </svg>
                                             </a>
-                                            <a href="{{ Storage::disk('public')->url($pembayaran->bukti_path) }}"
-                                                download
-                                                class="group p-3 text-indigo-600 dark:text-indigo-400 hover:text-indigo-900 dark:hover:text-indigo-300 transition-all duration-300 bg-indigo-50 dark:bg-indigo-900/20 rounded-xl hover:bg-indigo-100 dark:hover:bg-indigo-800/30 border border-indigo-200/50 dark:border-indigo-700/50 hover:shadow-lg transform hover:-translate-y-1"
-                                                title="Download bukti transfer">
-                                                <svg class="h-5 w-5" fill="none" stroke="currentColor"
-                                                    viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2M7 10l5 5m0 0 5-5m-5 5V4">
-                                                    </path>
+
+                                            <a href="{{ route('admin.pembayaran.download', $pembayaran->id) }}"
+                                            class="group p-3 text-indigo-600 dark:text-indigo-400 hover:text-indigo-900 dark:hover:text-indigo-300 transition-all duration-300 bg-indigo-50 dark:bg-indigo-900/20 rounded-xl hover:bg-indigo-100 dark:hover:bg-indigo-800/30 border border-indigo-200/50 dark:border-indigo-700/50 hover:shadow-lg transform hover:-translate-y-1"
+                                            title="Download bukti transfer">
+                                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2M7 10l5 5m0 0 5-5m-5 5V4"></path>
                                                 </svg>
                                             </a>
                                             @endif
+                                    
                                             @else
                                             <button wire:click="viewPembayaran({{ $pembayaran->id }})"
                                                 class="group p-3 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-300 transition-all duration-300 bg-gray-50 dark:bg-gray-900/20 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800/30 border border-gray-200/50 dark:border-gray-700/50 hover:shadow-lg transform hover:-translate-y-1">
@@ -576,34 +572,28 @@ with(function () {
                                                 </svg>
                                             </button>
                                             @if($pembayaran->bukti_path)
-                                            <a href="{{ Storage::disk('public')->url($pembayaran->bukti_path) }}"
-                                                target="_blank"
-                                                class="group p-3 text-emerald-600 dark:text-emerald-400 hover:text-emerald-900 dark:hover:text-emerald-300 transition-all duration-300 bg-emerald-50 dark:bg-emerald-900/20 rounded-xl hover:bg-emerald-100 dark:hover:bg-emerald-800/30 border border-emerald-200/50 dark:border-emerald-700/50 hover:shadow-lg transform hover:-translate-y-1"
-                                                title="Lihat bukti transfer">
-                                                <svg class="h-5 w-5" fill="none" stroke="currentColor"
-                                                    viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
-                                                    </path>
+                                            <a href="{{ route('admin.pembayaran.bukti', $pembayaran->id) }}"
+                                            target="_blank"
+                                            class="group p-3 text-emerald-600 dark:text-emerald-400 hover:text-emerald-900 dark:hover:text-emerald-300 transition-all duration-300 bg-emerald-50 dark:bg-emerald-900/20 rounded-xl hover:bg-emerald-100 dark:hover:bg-emerald-800/30 border border-emerald-200/50 dark:border-emerald-700/50 hover:shadow-lg transform hover:-translate-y-1"
+                                            title="Lihat bukti transfer">
+                                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
                                                 </svg>
                                             </a>
-                                            <a href="{{ Storage::disk('public')->url($pembayaran->bukti_path) }}"
-                                                download
-                                                class="group p-3 text-indigo-600 dark:text-indigo-400 hover:text-indigo-900 dark:hover:text-indigo-300 transition-all duration-300 bg-indigo-50 dark:bg-indigo-900/20 rounded-xl hover:bg-indigo-100 dark:hover:bg-indigo-800/30 border border-indigo-200/50 dark:border-indigo-700/50 hover:shadow-lg transform hover:-translate-y-1"
-                                                title="Download bukti transfer">
-                                                <svg class="h-5 w-5" fill="none" stroke="currentColor"
-                                                    viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2M7 10l5 5m0 0 5-5m-5 5V4">
-                                                    </path>
+
+                                            <a href="{{ route('admin.pembayaran.download', $pembayaran->id) }}"
+                                            class="group p-3 text-indigo-600 dark:text-indigo-400 hover:text-indigo-900 dark:hover:text-indigo-300 transition-all duration-300 bg-indigo-50 dark:bg-indigo-900/20 rounded-xl hover:bg-indigo-100 dark:hover:bg-indigo-800/30 border border-indigo-200/50 dark:border-indigo-700/50 hover:shadow-lg transform hover:-translate-y-1"
+                                            title="Download bukti transfer">
+                                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2M7 10l5 5m0 0 5-5m-5 5V4"></path>
                                                 </svg>
                                             </a>
                                             @endif
-                                            @endif
+                                        @endif
                                         </div>
                                     </td>
                                 </tr>
@@ -730,38 +720,7 @@ with(function () {
                 <!-- Bukti Transfer Preview -->
                 <div class="mt-4">
                     <h4 class="text-sm font-bold text-gray-800 dark:text-gray-200 mb-3">Bukti Transfer</h4>
-                    <div
-                        class="bg-white/70 dark:bg-gray-900/30 rounded-2xl p-3 border border-gray-200/50 dark:border-gray-700/50">
-                        <div class="flex items-start gap-4">
-                            <a href="{{ Storage::disk('public')->url($selectedPembayaran->bukti_path) }}"
-                                target="_blank" class="block">
-                                <img src="{{ Storage::disk('public')->url($selectedPembayaran->bukti_path) }}"
-                                    alt="Bukti transfer reservasi {{ $selectedPembayaran->reservasi->kode_reservasi ?? '' }}"
-                                    class="w-28 h-28 object-cover rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200">
-                            </a>
-                            <div class="flex flex-col gap-2">
-                                <a href="{{ Storage::disk('public')->url($selectedPembayaran->bukti_path) }}"
-                                    target="_blank"
-                                    class="inline-flex items-center px-4 py-2 rounded-xl bg-emerald-600 text-white text-xs font-bold shadow hover:bg-emerald-700 transition-colors duration-200">
-                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
-                                        </path>
-                                    </svg>
-                                    Lihat Full Size
-                                </a>
-                                <a href="{{ Storage::disk('public')->url($selectedPembayaran->bukti_path) }}" download
-                                    class="inline-flex items-center px-4 py-2 rounded-xl bg-indigo-600 text-white text-xs font-bold shadow hover:bg-indigo-700 transition-colors duration-200">
-                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2M7 10l5 5m0 0 5-5m-5 5V4">
-                                        </path>
-                                    </svg>
-                                    Download Bukti
-                                </a>
-                            </div>
+
                         </div>
                     </div>
                 </div>
