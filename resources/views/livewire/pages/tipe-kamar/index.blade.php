@@ -100,7 +100,7 @@ $deleteType = function ($typeId) {
             foreach ($type->galeriKamars as $foto) {
                 $path = str_replace('/storage/', '', $foto->url_foto);
                 if (\Illuminate\Support\Facades\Storage::disk('public')->exists($path)) {
-                    \Illuminate\Support\Facades\Storage::disk('public')->delete($path);
+                    \Illuminate\Support\Facades\Storage::disk('public')->delete();
                     \Log::info('Deleted photo from storage:', ['path' => $path]);
                 }
             }
@@ -486,13 +486,13 @@ with(function () {
                                         Kode</th>
                                     <th
                                         class="px-8 py-6 text-left text-sm font-bold text-gray-700 dark:text-gray-200 uppercase tracking-wider">
-                                        # Fasilitas</th>
+                                        Fasilitas</th>
                                     <th
                                         class="px-8 py-6 text-left text-sm font-bold text-gray-700 dark:text-gray-200 uppercase tracking-wider">
-                                        # Kamar</th>
+                                        Kamar</th>
                                     <th
                                         class="px-8 py-6 text-left text-sm font-bold text-gray-700 dark:text-gray-200 uppercase tracking-wider">
-                                        # Galeri</th>
+                                        Galeri</th>
                                     <th
                                         class="px-8 py-6 text-left text-sm font-bold text-gray-700 dark:text-gray-200 uppercase tracking-wider">
                                         Dibuat</th>

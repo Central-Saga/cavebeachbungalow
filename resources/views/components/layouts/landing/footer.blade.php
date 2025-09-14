@@ -17,15 +17,17 @@
             <div>
                 <h3 class="text-lg font-semibold mb-4">Tautan Cepat</h3>
                 <ul class="space-y-2">
-                    <li><a href="#hero"
+                    <li><a href="{{ route('landingpage.home') }}"
                             class="text-gray-600 hover:text-[#608BC1] transition-colors duration-200">Beranda</a></li>
-                    <li><a href="#aboutme"
+                    <li><a href="{{ route('landingpage.aboutme') }}"
                             class="text-gray-600 hover:text-[#608BC1] transition-colors duration-200">About Us</a>
                     </li>
-                    <li><a href="#gallery"
+                    <li><a href="{{ route('landingpage.gallery') }}"
                             class="text-gray-600 hover:text-[#608BC1] transition-colors duration-200">Gallery</a></li>
-                    <li><a href="#villas"
+                    <li><a href="{{ route('landingpage.tipe-kamar') }}"
                             class="text-gray-600 hover:text-[#608BC1] transition-colors duration-200">Villas</a></li>
+                    <li><a href="{{ route('landingpage.contact') }}"
+                            class="text-gray-600 hover:text-[#608BC1] transition-colors duration-200">Contact Us</a></li>
                 </ul>
             </div>
 

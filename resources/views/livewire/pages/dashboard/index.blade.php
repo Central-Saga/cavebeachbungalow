@@ -49,7 +49,7 @@ mount(function () {
         <!-- Header -->
         <div class="mb-8">
             <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-2">
-                {{ __('Selamat Datang') }}, {{ auth()->user()->name }}! 👋
+                {{ __('Selamat Datang') }}, {{ auth()->user()->pelanggan->nama_lengkap ?? auth()->user()->name }}! 👋
             </h1>
             <p class="text-lg text-gray-600 dark:text-gray-400">
                 {{ __('Kelola semuanya Disini') }}
@@ -181,12 +181,12 @@ mount(function () {
                             <div
                                 class="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-semibold text-blue-600 dark:text-blue-400">
-                                    {{ substr($reservasi['pelanggan']['nama'] ?? 'N/A', 0, 2) }}
+                                    {{ substr($reservasi['pelanggan']['nama_lengkap'] ?? 'N/A', 0, 2) }}
                                 </span>
                             </div>
                             <div>
                                 <p class="font-medium text-gray-900 dark:text-white">
-                                    {{ $reservasi['pelanggan']['nama'] ?? 'N/A' }}
+                                    {{ $reservasi['pelanggan']['nama_lengkap'] ?? 'N/A' }}
                                 </p>
                                 <p class="text-sm text-gray-500 dark:text-gray-400">
                                     {{ $reservasi['kamar']['nomor_kamar'] ?? 'N/A' }}

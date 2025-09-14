@@ -80,14 +80,29 @@
                 </div>
                 @else
                 <!-- User is not logged in -->
-                <a href="{{ route('login') }}"
-                    class="text-[#133E87] hover:text-[#608BC1] px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:scale-110 hover:bg-[#608BC1]/10 whitespace-nowrap">
-                    Login
-                </a>
-                <a href="{{ route('register') }}"
-                    class="bg-[#608BC1] hover:bg-[#4a6a99] text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 shadow-md hover:scale-110 hover:shadow-lg hover:-translate-y-1 whitespace-nowrap">
-                    Register
-                </a>
+                <div class="relative group">
+                    <button type="button"
+                        class="flex items-center space-x-2 text-[#133E87] hover:text-[#608BC1] px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:scale-110 hover:bg-[#608BC1]/10 whitespace-nowrap">
+                        <i class="fas fa-user-circle text-lg"></i>
+                        <span>User</span>
+                        <i class="fas fa-chevron-down text-xs transition-transform duration-300 group-hover:rotate-180"></i>
+                    </button>
+
+                    <!-- Guest Dropdown Menu -->
+                    <div
+                        class="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform scale-95 group-hover:scale-100 origin-top-right">
+                        <div class="py-2">
+                            <a href="{{ route('login') }}"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#608BC1]/10 hover:text-[#133E87] transition-colors duration-200">
+                                <i class="fas fa-sign-in-alt mr-2"></i>Login
+                            </a>
+                            <a href="{{ route('register') }}"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#608BC1]/10 hover:text-[#133E87] transition-colors duration-200">
+                                <i class="fas fa-user-plus mr-2"></i>Register
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 @endauth
             </div>
 
@@ -150,14 +165,18 @@
                 @else
                 <!-- User is not logged in (Mobile) -->
                 <div class="pt-3 space-y-2">
-                    <a href="{{ route('login') }}"
-                        class="text-[#133E87] hover:text-[#608BC1] block px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200 text-center">
-                        Login
-                    </a>
-                    <a href="{{ route('register') }}"
-                        class="bg-[#608BC1] hover:bg-[#4a6a99] text-white px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200 shadow-md block text-center">
-                        Register
-                    </a>
+                    <div class="px-6">
+                        <button id="guest-account-toggle" type="button"
+                            class="w-full flex items-center justify-center gap-2 text-[#133E87] hover:text-[#608BC1] px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200 bg-[#608BC1]/10">
+                            <i class="fas fa-user-circle text-lg"></i>
+                            <span class="font-medium">User</span>
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div id="guest-account-menu" class="mt-2 hidden bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
+                            <a href="{{ route('login') }}" class="block px-6 py-2 text-sm text-gray-700 hover:bg-[#608BC1]/10 hover:text-[#133E87]">Login</a>
+                            <a href="{{ route('register') }}" class="block px-6 py-2 text-sm text-gray-700 hover:bg-[#608BC1]/10 hover:text-[#133E87]">Register</a>
+                        </div>
+                    </div>
                 </div>
                 @endauth
             </div>
@@ -209,10 +228,19 @@
         document.addEventListener('click', function(event) {
             const mobileMenu = document.getElementById('mobile-menu');
             const mobileMenuButton = document.querySelector('button[onclick="toggleMobileMenu()"]');
+            const guestToggleBtn = document.getElementById('guest-account-toggle');
+            const guestMenuDiv = document.getElementById('guest-account-menu');
 
             if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
                 if (!mobileMenu.classList.contains('hidden')) {
                     mobileMenu.classList.add('hidden');
+                }
+            }
+
+            // Close guest account dropdown if clicking outside
+            if (guestMenuDiv && guestToggleBtn && !guestMenuDiv.contains(event.target) && !guestToggleBtn.contains(event.target)) {
+                if (!guestMenuDiv.classList.contains('hidden')) {
+                    guestMenuDiv.classList.add('hidden');
                 }
             }
         });
@@ -298,6 +326,16 @@
                 ticking = true;
             }
         });
+
+        // Mobile guest account dropdown toggle
+        const guestToggle = document.getElementById('guest-account-toggle');
+        const guestMenu = document.getElementById('guest-account-menu');
+        if (guestToggle && guestMenu) {
+            guestToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                guestMenu.classList.toggle('hidden');
+            });
+        }
 
         // Test GSAP immediately
         setTimeout(() => {

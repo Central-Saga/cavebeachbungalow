@@ -26,6 +26,16 @@ class Pelanggan extends Model
     ];
 
     /**
+     * The accessors to append to the model's array form.
+     * Ensures 'nama_lengkap' is available when using toArray()/toJson().
+     *
+     * @var array<int, string>
+     */
+    protected $appends = [
+        'nama_lengkap',
+    ];
+
+    /**
      * Get the user that owns the pelanggan.
      */
     public function user(): BelongsTo
