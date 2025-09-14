@@ -390,10 +390,10 @@ mount(function () {
 
       @php
       $testi = [
-      ['name'=>'Restu','text'=>'Lobby nyaman untuk kerja, Wi-Fi stabil.'],
-      ['name'=>'Iben','text'=>'Unit 2BR lega & bersih, anak betah.'],
+      ['name'=>'Restu','text'=>'Wi-Fi stabil.'],
+      ['name'=>'Iben','text'=>'Unit kamar bagus-bagus dan nyaman.'],
       ['name'=>'Rani','text'=>'Akses mudah, dekat transport & kuliner.'],
-      ['name'=>'Rini','text'=>'Dekat kampus, hemat waktu & biaya.'],
+      ['name'=>'Rini','text'=>'Dekat Pantai dan minimartket, hemat waktu & biaya.'],
       ['name'=>'Arap','text'=>'Interior modern, banyak spot foto kece.'],
       ['name'=>'Dwiki','text'=>'Koneksi internet cepat, meeting lancar.'],
       ['name'=>'Varina','text'=>'Dekat rumah sakit, shift malam aman.'],
