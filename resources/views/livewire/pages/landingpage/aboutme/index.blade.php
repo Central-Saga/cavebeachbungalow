@@ -419,7 +419,7 @@ mount(function () {
                 </div>
 
                 <div class="mt-6 text-white/70 text-sm">
-                    <p>Telepon: +62 813-3916-3939 • Email: admin@cavebeachbungalow.com</p>
+                    <p>Telepon: +62 83-11438-0118 • Email: cavebeachbungalow2025.com</p>
                 </div>
             </div>
         </div>
